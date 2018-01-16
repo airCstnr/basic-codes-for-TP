@@ -1,0 +1,8 @@
+
+-- Architecture en VHDL
+
+architecture nom_archi of nom_entité is
+
+-- détailler le contenu
+
+end architecture;
