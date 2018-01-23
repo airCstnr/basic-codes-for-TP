@@ -13,7 +13,7 @@ Morceaux de code pour mes TP, pour ne pas perdre du temps à réécrire les bloc
 + CE311 - VHDL
 + CE317 - Architecture (Nucléo)
 
-## Auteur
+## Auteurs
 
-Raphaël C
-Ivan R
++ Raphaël C
++ Ivan R
