@@ -1,4 +1,7 @@
 
-// HAL Init
+// à mettre dans le main
 
-// Clock Init
+// Initialisation générale
+HAL_Init();
+SystemClock_Config();
+GPIO_InitTypeDef GPIO_InitStruct;
