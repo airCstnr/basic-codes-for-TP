@@ -16,3 +16,4 @@ Morceaux de code pour mes TP, pour ne pas perdre du temps à réécrire les bloc
 ## Auteur
 
 Raphaël C
+Ivan R
