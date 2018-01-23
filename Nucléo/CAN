@@ -30,25 +30,33 @@ HAL_ADC_Start(&global_ADC_handler);
 
 while(1)
 {
-  HAL_ADC_PollForConversion( &global_ADC_handler, 1000 );
-  uint32_t valeur_convertie = HAL_ADC_GetValue( &global_ADC_handler );
-  HAL_Delay(100);
+    HAL_ADC_PollForConversion( &global_ADC_handler, 1000 );
+    uint32_t valeur_convertie = HAL_ADC_GetValue( &global_ADC_handler );
+    HAL_Delay(100);
   
-  if (valeur_convertie < 1240)
-  {
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_RESET );
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET );
-  }
-  else if (valeur_convertie < 2480)
-  {
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_SET );
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET );
-  } 
-  else
-  {
-      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_RESET );
-      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET );
-  }
+    #define POTARD_2V 2481
+    #define POTARD_1_5V 1861
+		#define POTARD_1V 1240
+
+		// Niveaux sur la LED Orange
+		if (valeur_convertie >= POTARD_1V && valeur_convertie <= POTARD_2V)
+		{
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_SET );
+		}
+		else
+		{
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_RESET );
+		}
+
+		// Hystérésis sur la LED Rouge
+		if( valeur_convertie > POTARD_2V)
+		{
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET );
+		}
+		if ( valeur_convertie < POTARD_1_5V)
+		{
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET );
+		}
 }
     
 // Valeurs constatées
