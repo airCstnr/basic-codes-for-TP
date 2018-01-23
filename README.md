@@ -5,14 +5,16 @@ Blocs unitaires de codes pour les TP
 
 ## Contenu
 
-Morceaux de code pour mes TP, pour ne pas perdre du temps à réécrire les blocs unitaires à chaque TP.
+Morceaux de code pour les TPs, pour ne pas perdre du temps à réécrire les fonctions
+standard à chaque TP.
 
 ## Cours concernés
 
-+ CS357 - C
-+ CE311 - VHDL
-+ CE317 - Architecture (Nucléo)
++ [CS357](/C) - C
++ [CE311](/VHDL) - VHDL
++ [CE317](/Archi) - Architecture (Nucléo)
 
-## Auteur
+## Auteurs
 
-Raphaël C
++ Raphaël C: @airCtsnr
++ Ivan R: @Ivan-Roger
