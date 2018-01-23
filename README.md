@@ -16,5 +16,5 @@ standard à chaque TP.
 
 ## Auteurs
 
-+ Raphaël C: @airCtsnr
-+ Ivan R: @Ivan-Roger
++ [Raphaël C](https://github.com/airCstnr)
++ [Ivan R](https://github.com/Ivan-Roger)
