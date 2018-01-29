@@ -1,0 +1,1430 @@
+Archive member included to satisfy reference by file (symbol)
+
+lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                              obj/main.o (HAL_Init)
+lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+                              obj/tptimer.o (HAL_GPIO_Init)
+lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                              obj/main.o (HAL_RCC_OscConfig)
+lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                              lib/libstm32f103_hal.a(stm32f1xx_hal.o) (HAL_NVIC_SetPriorityGrouping)
+lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                              obj/tptimer.o (HAL_TIM_Base_Start_IT)
+lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o) (TIMEx_DMACommutationCplt)
+lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o) (HAL_DMA_Start_IT)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (atexit)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (exit)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o) (__register_exitproc)
+/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o) (__call_exitprocs)
+
+Allocating common symbols
+Common symbol       size              file
+
+timHandleStruct     0x40              obj/tptimer.o
+uwTick              0x4               lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .text          0x0000000000000000       0x68 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .debug_line    0x0000000000000000       0x7e /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .debug_info    0x0000000000000000       0xa3 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .text          0x0000000000000000        0x0 obj/main.o
+ .data          0x0000000000000000        0x0 obj/main.o
+ .bss           0x0000000000000000        0x0 obj/main.o
+ .text          0x0000000000000000       0x14 obj/startup_stm32f103xb.o
+ .data          0x0000000000000000        0x0 obj/startup_stm32f103xb.o
+ .bss           0x0000000000000000        0x0 obj/startup_stm32f103xb.o
+ .text          0x0000000000000000        0x0 obj/stm32f1xx_hal_msp.o
+ .data          0x0000000000000000        0x0 obj/stm32f1xx_hal_msp.o
+ .bss           0x0000000000000000        0x0 obj/stm32f1xx_hal_msp.o
+ .text.HAL_UART_MspInit
+                0x0000000000000000        0x2 obj/stm32f1xx_hal_msp.o
+ .text          0x0000000000000000        0x0 obj/stm32f1xx_it.o
+ .data          0x0000000000000000        0x0 obj/stm32f1xx_it.o
+ .bss           0x0000000000000000        0x0 obj/stm32f1xx_it.o
+ .text          0x0000000000000000        0x0 obj/system_stm32f1xx.o
+ .data          0x0000000000000000        0x0 obj/system_stm32f1xx.o
+ .bss           0x0000000000000000        0x0 obj/system_stm32f1xx.o
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x5c obj/system_stm32f1xx.o
+ .rodata.APBPrescTable
+                0x0000000000000000        0x8 obj/system_stm32f1xx.o
+ .text          0x0000000000000000        0x0 obj/tptimer.o
+ .data          0x0000000000000000        0x0 obj/tptimer.o
+ .bss           0x0000000000000000        0x0 obj/tptimer.o
+ .text.TPTIMER_Stop
+                0x0000000000000000       0x14 obj/tptimer.o
+ .text.TPTIMER_Callback
+                0x0000000000000000        0x2 obj/tptimer.o
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DeInit
+                0x0000000000000000       0x20 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_SuspendTick
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_ResumeTick
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_GetHalVersion
+                0x0000000000000000        0x8 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_GetREVID
+                0x0000000000000000        0xc lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_GetDEVID
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DBGMCU_EnableDBGSleepMode
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DBGMCU_DisableDBGSleepMode
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DBGMCU_EnableDBGStopMode
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DBGMCU_DisableDBGStopMode
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DBGMCU_EnableDBGStandbyMode
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_DBGMCU_DisableDBGStandbyMode
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text.HAL_GetUID
+                0x0000000000000000       0x20 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text.HAL_GPIO_DeInit
+                0x0000000000000000       0xe0 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text.HAL_GPIO_ReadPin
+                0x0000000000000000        0xc lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text.HAL_GPIO_WritePin
+                0x0000000000000000        0xa lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text.HAL_GPIO_LockPin
+                0x0000000000000000       0x2a lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text.HAL_GPIO_EXTI_Callback
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text.HAL_GPIO_EXTI_IRQHandler
+                0x0000000000000000       0x18 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_DeInit
+                0x0000000000000000       0x44 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_MCOConfig
+                0x0000000000000000       0x50 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_EnableCSS
+                0x0000000000000000        0xc lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_DisableCSS
+                0x0000000000000000        0xc lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_GetHCLKFreq
+                0x0000000000000000        0xc lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_GetPCLK1Freq
+                0x0000000000000000       0x20 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_GetPCLK2Freq
+                0x0000000000000000       0x20 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_GetOscConfig
+                0x0000000000000000       0x80 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_GetClockConfig
+                0x0000000000000000       0x3c lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_CSSCallback
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text.HAL_RCC_NMI_IRQHandler
+                0x0000000000000000       0x20 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_DisableIRQ
+                0x0000000000000000       0x1c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_SystemReset
+                0x0000000000000000       0x24 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_GetPriorityGrouping
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_GetPriority
+                0x0000000000000000       0x5c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_SetPendingIRQ
+                0x0000000000000000       0x1c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_GetPendingIRQ
+                0x0000000000000000       0x1c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_ClearPendingIRQ
+                0x0000000000000000       0x1c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_NVIC_GetActive
+                0x0000000000000000       0x1c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_SYSTICK_CLKSourceConfig
+                0x0000000000000000       0x18 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_SYSTICK_Callback
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text.HAL_SYSTICK_IRQHandler
+                0x0000000000000000        0x8 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_OC1_SetConfig
+                0x0000000000000000       0x50 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_OC3_SetConfig
+                0x0000000000000000       0x54 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_OC4_SetConfig
+                0x0000000000000000       0x44 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_SlaveTimer_SetConfig
+                0x0000000000000000       0xaa lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_Start
+                0x0000000000000000       0x1a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_Stop
+                0x0000000000000000       0x2e lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_Stop_IT
+                0x0000000000000000       0x2a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_Start_DMA
+                0x0000000000000000       0x54 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_Stop_DMA
+                0x0000000000000000       0x30 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_Start
+                0x0000000000000000       0x38 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_Stop
+                0x0000000000000000       0x60 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_Start_IT
+                0x0000000000000000       0x48 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_Stop_IT
+                0x0000000000000000       0x70 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Start
+                0x0000000000000000       0x44 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Stop
+                0x0000000000000000       0x48 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Start_IT
+                0x0000000000000000       0x6e lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Stop_IT
+                0x0000000000000000       0x74 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Start_DMA
+                0x0000000000000000      0x124 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Stop_DMA
+                0x0000000000000000       0x74 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_DMABurst_WriteStart
+                0x0000000000000000       0xb4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_DMABurst_ReadStart
+                0x0000000000000000       0xb4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_DMABurst_ReadStop
+                0x0000000000000000       0x5e lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_DMABurst_WriteStop
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_GenerateEvent
+                0x0000000000000000       0x24 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_ConfigOCrefClear
+                0x0000000000000000       0xc0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_ConfigClockSource
+                0x0000000000000000      0x172 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_ConfigTI1Input
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_SlaveConfigSynchronization
+                0x0000000000000000       0x40 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_SlaveConfigSynchronization_IT
+                0x0000000000000000       0x40 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_ReadCapturedValue
+                0x0000000000000000       0x46 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PeriodElapsedCallback
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_DMAPeriodElapsedCplt
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_DMACaptureCplt
+                0x0000000000000000       0x3c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_DMADelayPulseCplt
+                0x0000000000000000       0x3c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_DMATriggerCplt
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_ErrorCallback
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_DMAError
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Base_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Init
+                0x0000000000000000       0x34 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Init
+                0x0000000000000000       0x34 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Init
+                0x0000000000000000       0x34 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_Init
+                0x0000000000000000       0x46 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_Encoder_Init
+                0x0000000000000000       0x92 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_OC2_SetConfig
+                0x0000000000000000       0x58 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_ConfigChannel
+                0x0000000000000000       0x5c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_ConfigChannel
+                0x0000000000000000       0xc4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_TI1_SetConfig
+                0x0000000000000000       0x54 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_ConfigChannel
+                0x0000000000000000      0x110 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OnePulse_ConfigChannel
+                0x0000000000000000       0xf4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.TIM_CCxChannelCmd
+                0x0000000000000000       0x18 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Stop
+                0x0000000000000000       0x54 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Start
+                0x0000000000000000       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Start
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Stop
+                0x0000000000000000       0x5c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Start_IT
+                0x0000000000000000       0x6c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Start_IT
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Stop_IT
+                0x0000000000000000       0x94 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Stop_IT
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Start_DMA
+                0x0000000000000000       0xe0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Start_DMA
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_PWM_Stop_DMA
+                0x0000000000000000       0x98 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_OC_Stop_DMA
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Start
+                0x0000000000000000       0x1a lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Stop
+                0x0000000000000000       0x2e lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Start_IT
+                0x0000000000000000       0x58 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Stop_IT
+                0x0000000000000000       0x6c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Start_DMA
+                0x0000000000000000       0xcc lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text.HAL_TIM_IC_Stop_DMA
+                0x0000000000000000       0x72 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.TIM_CCxNChannelCmd
+                0x0000000000000000       0x18 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_MspInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Init
+                0x0000000000000000       0xae lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_MspDeInit
+                0x0000000000000000        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_DeInit
+                0x0000000000000000       0x3a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Start
+                0x0000000000000000       0x1c lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Stop
+                0x0000000000000000       0x30 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Start_IT
+                0x0000000000000000       0x24 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Stop_IT
+                0x0000000000000000       0x38 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Start_DMA
+                0x0000000000000000       0x64 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_Stop_DMA
+                0x0000000000000000       0x38 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_PWMN_Start
+                0x0000000000000000       0x22 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OCN_Start
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_PWMN_Start_IT
+                0x0000000000000000       0x60 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OCN_Start_IT
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_PWMN_Stop_IT
+                0x0000000000000000       0x9a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OCN_Stop_IT
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_PWMN_Start_DMA
+                0x0000000000000000       0xd4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OCN_Start_DMA
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_PWMN_Stop_DMA
+                0x0000000000000000       0x8e lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OCN_Stop_DMA
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OnePulseN_Start
+                0x0000000000000000       0x1a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OnePulseN_Stop
+                0x0000000000000000       0x4a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_PWMN_Stop
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OCN_Stop
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OnePulseN_Start_IT
+                0x0000000000000000       0x2a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_OnePulseN_Stop_IT
+                0x0000000000000000       0x5a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_ConfigCommutationEvent
+                0x0000000000000000       0x4a lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_ConfigCommutationEvent_IT
+                0x0000000000000000       0x52 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_ConfigCommutationEvent_DMA
+                0x0000000000000000       0x64 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_ConfigBreakDeadTime
+                0x0000000000000000       0x4c lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_MasterConfigSynchronization
+                0x0000000000000000       0x44 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.TIMEx_DMACommutationCplt
+                0x0000000000000000       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text.HAL_TIMEx_HallSensor_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .text          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .data          0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .bss           0x0000000000000000        0x0 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_Init
+                0x0000000000000000       0x68 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_DeInit
+                0x0000000000000000       0x4c lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_Start
+                0x0000000000000000       0x5c lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_Start_IT
+                0x0000000000000000       0x7a lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_Abort
+                0x0000000000000000       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_Abort_IT
+                0x0000000000000000       0x90 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_PollForTransfer
+                0x0000000000000000      0x238 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_IRQHandler
+                0x0000000000000000      0x128 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_RegisterCallback
+                0x0000000000000000       0x46 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_UnRegisterCallback
+                0x0000000000000000       0x4e lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_GetState
+                0x0000000000000000        0x6 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .text.HAL_DMA_GetError
+                0x0000000000000000        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .comment       0x0000000000000000       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .ARM.attributes
+                0x0000000000000000       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .text          0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_info    0x0000000000000000      0x93d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000000000      0x1e7 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_loc     0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000000000      0x162 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_str     0x0000000000000000      0x5b0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .comment       0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .text          0x0000000000000000       0xd4 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+ .jcr           0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000020000 xr
+RAM              0x0000000020000000 0x0000000000005000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+LOAD obj/main.o
+LOAD obj/startup_stm32f103xb.o
+LOAD obj/stm32f1xx_hal_msp.o
+LOAD obj/stm32f1xx_it.o
+LOAD obj/system_stm32f1xx.o
+LOAD obj/tptimer.o
+LOAD lib/libstm32f103_hal.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+                0x0000000020005000                _estack = 0x20005000
+                0x0000000000000200                _Min_Heap_Size = 0x200
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x10c
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x10c obj/startup_stm32f103xb.o
+                0x0000000008000000                g_pfnVectors
+                0x000000000800010c                . = ALIGN (0x4)
+
+.text           0x000000000800010c      0xed0
+                0x000000000800010c                . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000000800010c       0xa4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .text          0x00000000080001b0        0xc /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+                0x00000000080001b0                atexit
+ .text          0x00000000080001bc       0x34 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+                0x00000000080001bc                __libc_fini_array
+ .text          0x00000000080001f0       0x50 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+                0x00000000080001f0                __libc_init_array
+ .text          0x0000000008000240       0x9c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+                0x0000000008000240                memset
+ .text          0x00000000080002dc       0xac /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+                0x00000000080002dc                __register_exitproc
+ *(.text*)
+ .text.TPTIMER_Callback
+                0x0000000008000388        0x4 obj/main.o
+                0x0000000008000388                TPTIMER_Callback
+ .text.SystemClock_Config
+                0x000000000800038c       0x56 obj/main.o
+                0x000000000800038c                SystemClock_Config
+ .text.startup.main
+                0x00000000080003e2       0x24 obj/main.o
+                0x00000000080003e2                main
+ *fill*         0x0000000008000406        0x2 
+ .text.Reset_Handler
+                0x0000000008000408       0x48 obj/startup_stm32f103xb.o
+                0x0000000008000408                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000450        0x2 obj/startup_stm32f103xb.o
+                0x0000000008000450                RTC_Alarm_IRQHandler
+                0x0000000008000450                EXTI2_IRQHandler
+                0x0000000008000450                TIM1_CC_IRQHandler
+                0x0000000008000450                PVD_IRQHandler
+                0x0000000008000450                EXTI3_IRQHandler
+                0x0000000008000450                EXTI0_IRQHandler
+                0x0000000008000450                I2C2_EV_IRQHandler
+                0x0000000008000450                ADC1_2_IRQHandler
+                0x0000000008000450                SPI1_IRQHandler
+                0x0000000008000450                TAMPER_IRQHandler
+                0x0000000008000450                DMA1_Channel4_IRQHandler
+                0x0000000008000450                USART3_IRQHandler
+                0x0000000008000450                RTC_IRQHandler
+                0x0000000008000450                DMA1_Channel7_IRQHandler
+                0x0000000008000450                CAN1_RX1_IRQHandler
+                0x0000000008000450                TIM4_IRQHandler
+                0x0000000008000450                I2C1_EV_IRQHandler
+                0x0000000008000450                DMA1_Channel6_IRQHandler
+                0x0000000008000450                RCC_IRQHandler
+                0x0000000008000450                TIM1_TRG_COM_IRQHandler
+                0x0000000008000450                DMA1_Channel1_IRQHandler
+                0x0000000008000450                Default_Handler
+                0x0000000008000450                EXTI15_10_IRQHandler
+                0x0000000008000450                EXTI9_5_IRQHandler
+                0x0000000008000450                SPI2_IRQHandler
+                0x0000000008000450                DMA1_Channel5_IRQHandler
+                0x0000000008000450                EXTI4_IRQHandler
+                0x0000000008000450                USB_LP_CAN1_RX0_IRQHandler
+                0x0000000008000450                USB_HP_CAN1_TX_IRQHandler
+                0x0000000008000450                DMA1_Channel3_IRQHandler
+                0x0000000008000450                TIM1_UP_IRQHandler
+                0x0000000008000450                WWDG_IRQHandler
+                0x0000000008000450                TIM2_IRQHandler
+                0x0000000008000450                TIM1_BRK_IRQHandler
+                0x0000000008000450                EXTI1_IRQHandler
+                0x0000000008000450                USART2_IRQHandler
+                0x0000000008000450                I2C2_ER_IRQHandler
+                0x0000000008000450                DMA1_Channel2_IRQHandler
+                0x0000000008000450                CAN1_SCE_IRQHandler
+                0x0000000008000450                FLASH_IRQHandler
+                0x0000000008000450                USART1_IRQHandler
+                0x0000000008000450                I2C1_ER_IRQHandler
+                0x0000000008000450                USBWakeUp_IRQHandler
+ .text.HAL_MspInit
+                0x0000000008000452        0x2 obj/stm32f1xx_hal_msp.o
+                0x0000000008000452                HAL_MspInit
+ .text.HAL_TIM_Base_MspInit
+                0x0000000008000454        0x2 obj/stm32f1xx_hal_msp.o
+                0x0000000008000454                HAL_TIM_Base_MspInit
+ .text.NMI_Handler
+                0x0000000008000456        0x2 obj/stm32f1xx_it.o
+                0x0000000008000456                NMI_Handler
+ .text.HardFault_Handler
+                0x0000000008000458        0x2 obj/stm32f1xx_it.o
+                0x0000000008000458                HardFault_Handler
+ .text.MemManage_Handler
+                0x000000000800045a        0x2 obj/stm32f1xx_it.o
+                0x000000000800045a                MemManage_Handler
+ .text.BusFault_Handler
+                0x000000000800045c        0x2 obj/stm32f1xx_it.o
+                0x000000000800045c                BusFault_Handler
+ .text.UsageFault_Handler
+                0x000000000800045e        0x2 obj/stm32f1xx_it.o
+                0x000000000800045e                UsageFault_Handler
+ .text.SVC_Handler
+                0x0000000008000460        0x2 obj/stm32f1xx_it.o
+                0x0000000008000460                SVC_Handler
+ .text.DebugMon_Handler
+                0x0000000008000462        0x2 obj/stm32f1xx_it.o
+                0x0000000008000462                DebugMon_Handler
+ .text.PendSV_Handler
+                0x0000000008000464        0x2 obj/stm32f1xx_it.o
+                0x0000000008000464                PendSV_Handler
+ .text.SysTick_Handler
+                0x0000000008000466        0x4 obj/stm32f1xx_it.o
+                0x0000000008000466                SysTick_Handler
+ *fill*         0x000000000800046a        0x2 
+ .text.TIM3_IRQHandler
+                0x000000000800046c        0xc obj/stm32f1xx_it.o
+                0x000000000800046c                TIM3_IRQHandler
+ .text.SystemInit
+                0x0000000008000478       0x4c obj/system_stm32f1xx.o
+                0x0000000008000478                SystemInit
+ .text.TPTIMER_LedInit
+                0x00000000080004c4       0x3c obj/tptimer.o
+                0x00000000080004c4                TPTIMER_LedInit
+ .text.TPTIMER_LedToggle
+                0x0000000008000500        0xc obj/tptimer.o
+                0x0000000008000500                TPTIMER_LedToggle
+ .text.TPTIMER_ErrorHandler
+                0x000000000800050c        0xe obj/tptimer.o
+                0x000000000800050c                TPTIMER_ErrorHandler
+ *fill*         0x000000000800051a        0x2 
+ .text.TPTIMER_InitPeriph
+                0x000000000800051c       0x30 obj/tptimer.o
+                0x000000000800051c                TPTIMER_InitPeriph
+ .text.TPTIMER_InitHandler
+                0x000000000800054c       0x20 obj/tptimer.o
+                0x000000000800054c                TPTIMER_InitHandler
+ .text.TPTIMER_Init
+                0x000000000800056c       0x20 obj/tptimer.o
+                0x000000000800056c                TPTIMER_Init
+ .text.TPTIMER_Start
+                0x000000000800058c       0x14 obj/tptimer.o
+                0x000000000800058c                TPTIMER_Start
+ .text.HAL_TIM_PeriodElapsedCallback
+                0x00000000080005a0        0x8 obj/tptimer.o
+                0x00000000080005a0                HAL_TIM_PeriodElapsedCallback
+ .text.HAL_InitTick
+                0x00000000080005a8       0x28 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                0x00000000080005a8                HAL_InitTick
+ .text.HAL_Init
+                0x00000000080005d0       0x24 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                0x00000000080005d0                HAL_Init
+ .text.HAL_IncTick
+                0x00000000080005f4       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                0x00000000080005f4                HAL_IncTick
+ .text.HAL_GetTick
+                0x0000000008000604        0xc lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                0x0000000008000604                HAL_GetTick
+ .text.HAL_Delay
+                0x0000000008000610       0x20 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                0x0000000008000610                HAL_Delay
+ .text.HAL_GPIO_Init
+                0x0000000008000630      0x1c0 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+                0x0000000008000630                HAL_GPIO_Init
+ .text.HAL_GPIO_TogglePin
+                0x00000000080007f0        0x8 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+                0x00000000080007f0                HAL_GPIO_TogglePin
+ .text.HAL_RCC_OscConfig
+                0x00000000080007f8      0x318 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                0x00000000080007f8                HAL_RCC_OscConfig
+ .text.HAL_RCC_GetSysClockFreq
+                0x0000000008000b10       0x7c lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                0x0000000008000b10                HAL_RCC_GetSysClockFreq
+ .text.HAL_RCC_ClockConfig
+                0x0000000008000b8c      0x148 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                0x0000000008000b8c                HAL_RCC_ClockConfig
+ .text.HAL_NVIC_SetPriorityGrouping
+                0x0000000008000cd4       0x24 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                0x0000000008000cd4                HAL_NVIC_SetPriorityGrouping
+ .text.HAL_NVIC_SetPriority
+                0x0000000008000cf8       0x68 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                0x0000000008000cf8                HAL_NVIC_SetPriority
+ .text.HAL_NVIC_EnableIRQ
+                0x0000000008000d60       0x18 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                0x0000000008000d60                HAL_NVIC_EnableIRQ
+ .text.HAL_SYSTICK_Config
+                0x0000000008000d78       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                0x0000000008000d78                HAL_SYSTICK_Config
+ .text.HAL_TIM_Base_Start_IT
+                0x0000000008000da4       0x16 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000da4                HAL_TIM_Base_Start_IT
+ .text.HAL_TIM_OC_DelayElapsedCallback
+                0x0000000008000dba        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000dba                HAL_TIM_OC_DelayElapsedCallback
+ .text.HAL_TIM_IC_CaptureCallback
+                0x0000000008000dbc        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000dbc                HAL_TIM_IC_CaptureCallback
+ .text.HAL_TIM_PWM_PulseFinishedCallback
+                0x0000000008000dbe        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000dbe                HAL_TIM_PWM_PulseFinishedCallback
+ .text.HAL_TIM_TriggerCallback
+                0x0000000008000dc0        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000dc0                HAL_TIM_TriggerCallback
+ .text.HAL_TIM_IRQHandler
+                0x0000000008000dc2      0x144 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000dc2                HAL_TIM_IRQHandler
+ *fill*         0x0000000008000f06        0x2 
+ .text.TIM_Base_SetConfig
+                0x0000000008000f08       0x70 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000f08                TIM_Base_SetConfig
+ .text.HAL_TIM_Base_Init
+                0x0000000008000f78       0x34 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                0x0000000008000f78                HAL_TIM_Base_Init
+ .text.HAL_TIMEx_CommutationCallback
+                0x0000000008000fac        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                0x0000000008000fac                HAL_TIMEx_CommutationCallback
+ .text.HAL_TIMEx_BreakCallback
+                0x0000000008000fae        0x2 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                0x0000000008000fae                HAL_TIMEx_BreakCallback
+ .text.startup  0x0000000008000fb0       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ *(.glue_7)
+ .glue_7        0x0000000008000fc4        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008000fc4        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008000fc4        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ *(.init)
+ .init          0x0000000008000fc4        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                0x0000000008000fc4                _init
+ .init          0x0000000008000fc8        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+ *(.fini)
+ .fini          0x0000000008000fd0        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                0x0000000008000fd0                _fini
+ .fini          0x0000000008000fd4        0x8 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+                0x0000000008000fdc                . = ALIGN (0x4)
+                0x0000000008000fdc                _etext = .
+
+.vfp11_veneer   0x0000000008000fdc        0x0
+ .vfp11_veneer  0x0000000008000fdc        0x0 linker stubs
+
+.v4_bx          0x0000000008000fdc        0x0
+ .v4_bx         0x0000000008000fdc        0x0 linker stubs
+
+.iplt           0x0000000008000fdc        0x0
+ .iplt          0x0000000008000fdc        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+
+.rodata         0x0000000008000fdc       0x28
+                0x0000000008000fdc                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x0000000008000fdc       0x10 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .rodata        0x0000000008000fec        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+                0x0000000008000fec                _global_impure_ptr
+ *(.rodata*)
+ .rodata.AHBPrescTable
+                0x0000000008000ff0       0x10 obj/system_stm32f1xx.o
+                0x0000000008000ff0                AHBPrescTable
+ .rodata.str1.4
+                0x0000000008001000        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+                                          0x2 (size before relaxing)
+                0x0000000008001004                . = ALIGN (0x4)
+
+.rel.dyn        0x0000000008001004        0x0
+ .rel.iplt      0x0000000008001004        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008001004        0x0
+                0x0000000008001004                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008001004                __exidx_end = .
+
+.preinit_array  0x0000000008001004        0x0
+                0x0000000008001004                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x0000000008001004                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008001004        0x8
+                0x0000000008001004                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ .init_array.00000
+                0x0000000008001004        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ *(.init_array*)
+ .init_array    0x0000000008001008        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+                0x000000000800100c                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000000000800100c        0x4
+                0x000000000800100c                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000800100c        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+                0x0000000008001010                PROVIDE (__fini_array_end, .)
+                0x0000000008001010                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000      0x434 load address 0x0000000008001010
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ .data          0x0000000020000000      0x430 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+                0x0000000020000000                _impure_ptr
+ *(.data*)
+ .data.SystemCoreClock
+                0x0000000020000430        0x4 obj/system_stm32f1xx.o
+                0x0000000020000430                SystemCoreClock
+                0x0000000020000434                . = ALIGN (0x4)
+                0x0000000020000434                _edata = .
+
+.jcr            0x0000000020000434        0x0 load address 0x0000000008001444
+ .jcr           0x0000000020000434        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+
+.tm_clone_table
+                0x0000000020000434        0x0 load address 0x0000000008001444
+ .tm_clone_table
+                0x0000000020000434        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .tm_clone_table
+                0x0000000020000434        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+
+.igot.plt       0x0000000020000434        0x0 load address 0x0000000008001444
+ .igot.plt      0x0000000020000434        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+                0x0000000020000434                . = ALIGN (0x4)
+
+.bss            0x0000000020000434       0x60 load address 0x0000000008001444
+                0x0000000020000434                _sbss = .
+                0x0000000020000434                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x0000000020000434       0x1c /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000020000450       0x40 obj/tptimer.o
+                0x0000000020000450                timHandleStruct
+ COMMON         0x0000000020000490        0x4 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                0x0000000020000490                uwTick
+                0x0000000020000494                . = ALIGN (0x4)
+                0x0000000020000494                _ebss = .
+                0x0000000020000494                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x0000000020000494      0x604 load address 0x0000000008001444
+                0x0000000020000498                . = ALIGN (0x8)
+ *fill*         0x0000000020000494        0x4 
+                [!provide]                        PROVIDE (end, .)
+                [!provide]                        PROVIDE (_end, .)
+                0x0000000020000698                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000498      0x200 
+                0x0000000020000a98                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000698      0x400 
+                0x0000000020000a98                . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1d /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+ .ARM.attributes
+                0x000000000000001d       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x33 obj/main.o
+ .ARM.attributes
+                0x000000000000007d       0x21 obj/startup_stm32f103xb.o
+ .ARM.attributes
+                0x000000000000009e       0x33 obj/stm32f1xx_hal_msp.o
+ .ARM.attributes
+                0x00000000000000d1       0x33 obj/stm32f1xx_it.o
+ .ARM.attributes
+                0x0000000000000104       0x33 obj/system_stm32f1xx.o
+ .ARM.attributes
+                0x0000000000000137       0x33 obj/tptimer.o
+ .ARM.attributes
+                0x000000000000016a       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .ARM.attributes
+                0x000000000000019d       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .ARM.attributes
+                0x00000000000001d0       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .ARM.attributes
+                0x0000000000000203       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .ARM.attributes
+                0x0000000000000236       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .ARM.attributes
+                0x0000000000000269       0x33 lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .ARM.attributes
+                0x000000000000029c       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000000002c9       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000000000002f6       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000323       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000350       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000000037d       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000000000003aa       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000003d7       0x2d /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+ .ARM.attributes
+                0x0000000000000404       0x1d /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+OUTPUT(out/test.elf elf32-littlearm)
+
+.comment        0x0000000000000000       0x56
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+                                         0x2c (size before relaxing)
+ .comment       0x000000000000002b       0x2c obj/main.o
+ .comment       0x000000000000002b       0x2c obj/stm32f1xx_hal_msp.o
+ .comment       0x000000000000002b       0x2c obj/stm32f1xx_it.o
+ .comment       0x000000000000002b       0x2c obj/system_stm32f1xx.o
+ .comment       0x000000000000002b       0x2c obj/tptimer.o
+ .comment       0x000000000000002b       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+ .comment       0x000000000000002b       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+ .comment       0x000000000000002b       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+ .comment       0x000000000000002b       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+ .comment       0x000000000000002b       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+ .comment       0x000000000000002b       0x2c lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+ .comment       0x000000000000002b       0x2b /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+                                         0x2c (size before relaxing)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000056       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+
+.debug_info     0x0000000000000000     0x2fdd
+ .debug_info    0x0000000000000000      0x907 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .debug_info    0x0000000000000907       0xfa /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .debug_info    0x0000000000000a01      0x8a5 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .debug_info    0x00000000000012a6      0x110 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .debug_info    0x00000000000013b6      0x91b /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .debug_info    0x0000000000001cd1      0x950 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000002621      0x9bc /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+.debug_abbrev   0x0000000000000000      0xb53
+ .debug_abbrev  0x0000000000000000      0x1f6 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x00000000000001f6       0xbd /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .debug_abbrev  0x00000000000002b3      0x189 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x000000000000043c       0xba /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .debug_abbrev  0x00000000000004f6      0x1cd /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .debug_abbrev  0x00000000000006c3      0x220 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x00000000000008e3      0x270 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+.debug_loc      0x0000000000000000      0x639
+ .debug_loc     0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .debug_loc     0x000000000000002c       0x5c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .debug_loc     0x0000000000000088       0xae /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .debug_loc     0x0000000000000136      0x1bd /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .debug_loc     0x00000000000002f3      0x1ad /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .debug_loc     0x00000000000004a0      0x199 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+.debug_aranges  0x0000000000000000       0xe0
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .debug_aranges
+                0x0000000000000040       0x18 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000058       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .debug_aranges
+                0x0000000000000078       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .debug_aranges
+                0x0000000000000098       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x00000000000000b8       0x28 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+.debug_line     0x0000000000000000      0x84a
+ .debug_line    0x0000000000000000      0x151 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000151       0x9f /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .debug_line    0x00000000000001f0       0xe9 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+ .debug_line    0x00000000000002d9       0xb9 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .debug_line    0x0000000000000392      0x176 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .debug_line    0x0000000000000508      0x18f /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000000697      0x1b3 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+.debug_str      0x0000000000000000      0x897
+ .debug_str     0x0000000000000000      0x542 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+                                        0x5af (size before relaxing)
+ .debug_str     0x0000000000000542       0xc5 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+                                        0x1c8 (size before relaxing)
+ .debug_str     0x0000000000000607       0x98 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+                                        0x564 (size before relaxing)
+ .debug_str     0x000000000000069f       0x93 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+                                        0x1f2 (size before relaxing)
+ .debug_str     0x0000000000000732       0xa9 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+                                        0x57c (size before relaxing)
+ .debug_str     0x00000000000007db       0x41 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+                                        0x5c9 (size before relaxing)
+ .debug_str     0x000000000000081c       0x7b /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+                                        0x5da (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x138
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000020       0x34 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000054       0x2c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000000080       0x34 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+ .debug_frame   0x00000000000000b4       0x34 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000000000e8       0x50 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+.debug_ranges   0x0000000000000000       0x38
+ .debug_ranges  0x0000000000000000       0x38 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC1_2_IRQHandler                                 obj/startup_stm32f103xb.o
+AHBPrescTable                                     obj/system_stm32f1xx.o
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+APBPrescTable                                     obj/system_stm32f1xx.o
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+BusFault_Handler                                  obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+CAN1_RX1_IRQHandler                               obj/startup_stm32f103xb.o
+CAN1_SCE_IRQHandler                               obj/startup_stm32f103xb.o
+DMA1_Channel1_IRQHandler                          obj/startup_stm32f103xb.o
+DMA1_Channel2_IRQHandler                          obj/startup_stm32f103xb.o
+DMA1_Channel3_IRQHandler                          obj/startup_stm32f103xb.o
+DMA1_Channel4_IRQHandler                          obj/startup_stm32f103xb.o
+DMA1_Channel5_IRQHandler                          obj/startup_stm32f103xb.o
+DMA1_Channel6_IRQHandler                          obj/startup_stm32f103xb.o
+DMA1_Channel7_IRQHandler                          obj/startup_stm32f103xb.o
+DebugMon_Handler                                  obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+Default_Handler                                   obj/startup_stm32f103xb.o
+EXTI0_IRQHandler                                  obj/startup_stm32f103xb.o
+EXTI15_10_IRQHandler                              obj/startup_stm32f103xb.o
+EXTI1_IRQHandler                                  obj/startup_stm32f103xb.o
+EXTI2_IRQHandler                                  obj/startup_stm32f103xb.o
+EXTI3_IRQHandler                                  obj/startup_stm32f103xb.o
+EXTI4_IRQHandler                                  obj/startup_stm32f103xb.o
+EXTI9_5_IRQHandler                                obj/startup_stm32f103xb.o
+FLASH_IRQHandler                                  obj/startup_stm32f103xb.o
+HAL_DBGMCU_DisableDBGSleepMode                    lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_DBGMCU_DisableDBGStandbyMode                  lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_DBGMCU_DisableDBGStopMode                     lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_DBGMCU_EnableDBGSleepMode                     lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_DBGMCU_EnableDBGStandbyMode                   lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_DBGMCU_EnableDBGStopMode                      lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_DMA_Abort                                     lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_DMA_Abort_IT                                  lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_DeInit                                    lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_GetError                                  lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_GetState                                  lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_IRQHandler                                lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_Init                                      lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_PollForTransfer                           lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_RegisterCallback                          lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_Start                                     lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DMA_Start_IT                                  lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_DMA_UnRegisterCallback                        lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+HAL_DeInit                                        lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_Delay                                         lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                                                  obj/tptimer.o
+HAL_GPIO_DeInit                                   lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+HAL_GPIO_EXTI_Callback                            lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+HAL_GPIO_EXTI_IRQHandler                          lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+HAL_GPIO_Init                                     lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                                                  obj/tptimer.o
+HAL_GPIO_LockPin                                  lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+HAL_GPIO_ReadPin                                  lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+HAL_GPIO_TogglePin                                lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+                                                  obj/tptimer.o
+HAL_GPIO_WritePin                                 lib/libstm32f103_hal.a(stm32f1xx_hal_gpio.o)
+HAL_GetDEVID                                      lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_GetHalVersion                                 lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_GetREVID                                      lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_GetTick                                       lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_dma.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_GetUID                                        lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_IncTick                                       lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                                                  obj/stm32f1xx_it.o
+HAL_Init                                          lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                                                  obj/main.o
+HAL_InitTick                                      lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_MspDeInit                                     lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_MspInit                                       obj/stm32f1xx_hal_msp.o
+HAL_NVIC_ClearPendingIRQ                          lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_DisableIRQ                               lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_EnableIRQ                                lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                                                  obj/tptimer.o
+HAL_NVIC_GetActive                                lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_GetPendingIRQ                            lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_GetPriority                              lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_GetPriorityGrouping                      lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_SetPendingIRQ                            lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_NVIC_SetPriority                              lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+                                                  obj/tptimer.o
+HAL_NVIC_SetPriorityGrouping                      lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_NVIC_SystemReset                              lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_RCC_CSSCallback                               lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_ClockConfig                               lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                                                  obj/main.o
+HAL_RCC_DeInit                                    lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_DisableCSS                                lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_EnableCSS                                 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_GetClockConfig                            lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_GetHCLKFreq                               lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_GetOscConfig                              lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_GetPCLK1Freq                              lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_GetPCLK2Freq                              lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_GetSysClockFreq                           lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_MCOConfig                                 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_NMI_IRQHandler                            lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+HAL_RCC_OscConfig                                 lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                                                  obj/main.o
+HAL_ResumeTick                                    lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_SYSTICK_CLKSourceConfig                       lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_SYSTICK_Callback                              lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_SYSTICK_Config                                lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_SYSTICK_IRQHandler                            lib/libstm32f103_hal.a(stm32f1xx_hal_cortex.o)
+HAL_SuspendTick                                   lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+HAL_TIMEx_BreakCallback                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIMEx_CommutationCallback                     lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIMEx_ConfigBreakDeadTime                     lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_ConfigCommutationEvent                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_ConfigCommutationEvent_DMA              lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_ConfigCommutationEvent_IT               lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_DeInit                       lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_GetState                     lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Init                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_MspDeInit                    lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_MspInit                      lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Start                        lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Start_DMA                    lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Start_IT                     lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Stop                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Stop_DMA                     lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_HallSensor_Stop_IT                      lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_MasterConfigSynchronization             lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OCN_Start                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OCN_Start_DMA                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OCN_Start_IT                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OCN_Stop                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OCN_Stop_DMA                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OCN_Stop_IT                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OnePulseN_Start                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OnePulseN_Start_IT                      lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OnePulseN_Stop                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_OnePulseN_Stop_IT                       lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_PWMN_Start                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_PWMN_Start_DMA                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_PWMN_Start_IT                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_PWMN_Stop                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_PWMN_Stop_DMA                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIMEx_PWMN_Stop_IT                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+HAL_TIM_Base_DeInit                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_GetState                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_Init                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  obj/tptimer.o
+HAL_TIM_Base_MspDeInit                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_MspInit                              obj/stm32f1xx_hal_msp.o
+HAL_TIM_Base_Start                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_Start_DMA                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_Start_IT                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  obj/tptimer.o
+HAL_TIM_Base_Stop                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_Stop_DMA                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Base_Stop_IT                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  obj/tptimer.o
+HAL_TIM_ConfigClockSource                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_ConfigOCrefClear                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_ConfigTI1Input                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_DMABurst_ReadStart                        lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_DMABurst_ReadStop                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_DMABurst_WriteStart                       lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_DMABurst_WriteStop                        lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_DeInit                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_GetState                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Init                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_MspDeInit                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_MspInit                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Start                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Start_DMA                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Start_IT                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Stop                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Stop_DMA                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_Encoder_Stop_IT                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_ErrorCallback                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_GenerateEvent                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_CaptureCallback                        lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_ConfigChannel                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_DeInit                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_GetState                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Init                                   lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_MspDeInit                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_MspInit                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Start                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Start_DMA                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Start_IT                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Stop                                   lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Stop_DMA                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IC_Stop_IT                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_IRQHandler                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  obj/stm32f1xx_it.o
+HAL_TIM_OC_ConfigChannel                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_DeInit                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_DelayElapsedCallback                   lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_GetState                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Init                                   lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_MspDeInit                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_MspInit                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Start                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Start_DMA                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Start_IT                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Stop                                   lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Stop_DMA                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OC_Stop_IT                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_ConfigChannel                    lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_DeInit                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_GetState                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_Init                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_MspDeInit                        lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_MspInit                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_Start                            lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_Start_IT                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_Stop                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_OnePulse_Stop_IT                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_ConfigChannel                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_DeInit                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_GetState                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Init                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_MspDeInit                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_MspInit                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_PulseFinishedCallback                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Start                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Start_DMA                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Start_IT                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Stop                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Stop_DMA                              lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PWM_Stop_IT                               lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_PeriodElapsedCallback                     obj/tptimer.o
+HAL_TIM_ReadCapturedValue                         lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_SlaveConfigSynchronization                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_SlaveConfigSynchronization_IT             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_TIM_TriggerCallback                           lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+HAL_UART_MspInit                                  obj/stm32f1xx_hal_msp.o
+HardFault_Handler                                 obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+I2C1_ER_IRQHandler                                obj/startup_stm32f103xb.o
+I2C1_EV_IRQHandler                                obj/startup_stm32f103xb.o
+I2C2_ER_IRQHandler                                obj/startup_stm32f103xb.o
+I2C2_EV_IRQHandler                                obj/startup_stm32f103xb.o
+MemManage_Handler                                 obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+NMI_Handler                                       obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+PVD_IRQHandler                                    obj/startup_stm32f103xb.o
+PendSV_Handler                                    obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+RCC_IRQHandler                                    obj/startup_stm32f103xb.o
+RTC_Alarm_IRQHandler                              obj/startup_stm32f103xb.o
+RTC_IRQHandler                                    obj/startup_stm32f103xb.o
+Reset_Handler                                     obj/startup_stm32f103xb.o
+SPI1_IRQHandler                                   obj/startup_stm32f103xb.o
+SPI2_IRQHandler                                   obj/startup_stm32f103xb.o
+SVC_Handler                                       obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+SysTick_Handler                                   obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+SystemClock_Config                                obj/main.o
+SystemCoreClock                                   obj/system_stm32f1xx.o
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal.o)
+SystemCoreClockUpdate                             obj/system_stm32f1xx.o
+SystemInit                                        obj/system_stm32f1xx.o
+                                                  obj/startup_stm32f103xb.o
+TAMPER_IRQHandler                                 obj/startup_stm32f103xb.o
+TIM1_BRK_IRQHandler                               obj/startup_stm32f103xb.o
+TIM1_CC_IRQHandler                                obj/startup_stm32f103xb.o
+TIM1_TRG_COM_IRQHandler                           obj/startup_stm32f103xb.o
+TIM1_UP_IRQHandler                                obj/startup_stm32f103xb.o
+TIM2_IRQHandler                                   obj/startup_stm32f103xb.o
+TIM3_IRQHandler                                   obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+TIM4_IRQHandler                                   obj/startup_stm32f103xb.o
+TIMEx_DMACommutationCplt                          lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+TIM_Base_SetConfig                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TIM_CCxChannelCmd                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TIM_DMACaptureCplt                                lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TIM_DMADelayPulseCplt                             lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TIM_DMAError                                      lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TIM_OC2_SetConfig                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TIM_TI1_SetConfig                                 lib/libstm32f103_hal.a(stm32f1xx_hal_tim.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_tim_ex.o)
+TPTIMER_Callback                                  obj/main.o
+TPTIMER_ErrorHandler                              obj/tptimer.o
+                                                  obj/main.o
+TPTIMER_Init                                      obj/tptimer.o
+                                                  obj/main.o
+TPTIMER_InitHandler                               obj/tptimer.o
+TPTIMER_InitPeriph                                obj/tptimer.o
+TPTIMER_LedInit                                   obj/tptimer.o
+                                                  obj/main.o
+TPTIMER_LedToggle                                 obj/tptimer.o
+                                                  obj/main.o
+TPTIMER_Start                                     obj/tptimer.o
+                                                  obj/main.o
+TPTIMER_Stop                                      obj/tptimer.o
+USART1_IRQHandler                                 obj/startup_stm32f103xb.o
+USART2_IRQHandler                                 obj/startup_stm32f103xb.o
+USART3_IRQHandler                                 obj/startup_stm32f103xb.o
+USBWakeUp_IRQHandler                              obj/startup_stm32f103xb.o
+USB_HP_CAN1_TX_IRQHandler                         obj/startup_stm32f103xb.o
+USB_LP_CAN1_RX0_IRQHandler                        obj/startup_stm32f103xb.o
+UsageFault_Handler                                obj/stm32f1xx_it.o
+                                                  obj/startup_stm32f103xb.o
+WWDG_IRQHandler                                   obj/startup_stm32f103xb.o
+_ITM_deregisterTMCloneTable                       /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+_ITM_registerTMCloneTable                         /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+_Jv_RegisterClasses                               /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+__TMC_END__                                       /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtend.o
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+__bss_end__                                       /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+__bss_start__                                     /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+__call_exitprocs                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+__deregister_frame_info                           /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+__dso_handle                                      /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+__fini_array_end                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+__fini_array_start                                /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+__init_array_end                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+__init_array_start                                /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+__libc_fini                                       /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+__libc_fini_array                                 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+__libc_init_array                                 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+                                                  obj/startup_stm32f103xb.o
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+__preinit_array_end                               /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+__preinit_array_start                             /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+__register_exitproc                               /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+__register_frame_info                             /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+__stack                                           /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+_ebss                                             obj/startup_stm32f103xb.o
+_edata                                            obj/startup_stm32f103xb.o
+_estack                                           obj/startup_stm32f103xb.o
+_exit                                             /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+_fini                                             /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-fini.o)
+_global_impure_ptr                                /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+_impure_ptr                                       /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-impure.o)
+_init                                             /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-init.o)
+_mainCRTStartup                                   /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+_sbss                                             obj/startup_stm32f103xb.o
+_sdata                                            obj/startup_stm32f103xb.o
+_sidata                                           obj/startup_stm32f103xb.o
+_start                                            /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+atexit                                            /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+exit                                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-exit.o)
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+free                                              /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__call_atexit.o)
+g_pfnVectors                                      obj/startup_stm32f103xb.o
+hardware_init_hook                                /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+main                                              obj/main.o
+                                                  obj/startup_stm32f103xb.o
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+malloc                                            /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-__atexit.o)
+memset                                            /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/libc.a(lib_a-memset.o)
+                                                  lib/libstm32f103_hal.a(stm32f1xx_hal_rcc.o)
+                                                  obj/main.o
+                                                  /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+software_init_hook                                /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+timHandleStruct                                   obj/tptimer.o
+                                                  obj/stm32f1xx_it.o
+uwTick                                            lib/libstm32f103_hal.a(stm32f1xx_hal.o)
