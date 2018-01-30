@@ -1,0 +1,4 @@
+.metadata/*
+RemoteSystemsTempFiles/*
+nucleo-f103rb_hal_lib/*
+.gitignore
