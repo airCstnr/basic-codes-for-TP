@@ -45,8 +45,6 @@ void SystemClock_Config(void) {
   }
 }
 
-char decodeQuartet(char quartet);
-void afficheNombre(char nombre);
 
 //uint16_t segPins[8] = {GPIO_PIN_5, GPIO_PIN_6, GPIO_PIN_1, GPIO_PIN_0, GPIO_PIN_5, GPIO_PIN_8, GPIO_PIN_10, GPIO_PIN_4};
 //GPIO_TypeDef *segPorts[8] = {GPIOA, GPIOA, GPIOC, GPIOC, GPIOB, GPIOA, GPIOA, GPIOA};
@@ -55,20 +53,30 @@ GPIO_TypeDef *segPorts[7] = {GPIOA, GPIOA, GPIOC, GPIOC, GPIOB, GPIOA, GPIOA};
 GPIO_InitTypeDef io_seg[7];
 GPIO_InitTypeDef io_segTest;
 GPIO_InitTypeDef io_anode[2];
+GPIO_InitTypeDef io_clk_sw;
+GPIO_InitTypeDef io_btn_1;
+GPIO_InitTypeDef io_btn_2;
+
+char statutAnodes;
 
 // Instance du timer (à mettre en global et dans le .h)
-TIM_HandleTypeDef timer;
+TIM_HandleTypeDef timer2;
+TIM_HandleTypeDef timer3;
+unsigned int nombreAffiche;
+char clk_sw;
 
 int main(void)
 {
 	HAL_Init();
 	SystemClock_Config();
-
+4
 	__HAL_RCC_GPIOA_CLK_ENABLE();
 	__HAL_RCC_GPIOB_CLK_ENABLE();
 	__HAL_RCC_GPIOC_CLK_ENABLE();
 	__HAL_RCC_AFIO_CLK_ENABLE();
 	__HAL_AFIO_REMAP_SWJ_NONJTRST();
+	__HAL_RCC_TIM2_CLK_ENABLE();
+	__HAL_RCC_TIM3_CLK_ENABLE();
 
 	for (int i=0; i<7; i++) {
 		io_seg[i].Mode  = GPIO_MODE_OUTPUT_PP;
@@ -92,34 +100,56 @@ int main(void)
 	io_anode[1].Pin   = GPIO_PIN_10;
 	HAL_GPIO_Init(GPIOB, &io_anode[1]);
 
+	// GPIO Clock Switch
+	io_clk_sw.Mode  = GPIO_MODE_OUTPUT_PP;
+	io_clk_sw.Pull  = GPIO_PULLUP;
+	io_clk_sw.Speed = GPIO_SPEED_FREQ_LOW;
+	io_clk_sw.Pin   = GPIO_PIN_9;
+	HAL_GPIO_Init(GPIOA, &io_clk_sw);
+
+	// Buttons
+	io_btn_1.Mode  = GPIO_MODE_IT_RISING;
+	io_btn_1.Pull  = GPIO_PULLUP;
+	io_btn_1.Speed = GPIO_SPEED_FREQ_LOW;
+	io_btn_1.Pin   = GPIO_PIN_9;
+	HAL_GPIO_Init(GPIOA, &io_btn_1);
+
+	// Timer
+	HAL_NVIC_SetPriority(TIM2_IRQn, 3, 0);
+	HAL_NVIC_EnableIRQ(TIM2_IRQn);
+	HAL_NVIC_SetPriority(TIM3_IRQn, 2, 0);
+	HAL_NVIC_EnableIRQ(TIM3_IRQn);
+
 	// Configuration de l'instance timer
-	timer.Instance = TIM2;
-	timer.Init.Prescaler = 6400;
-	timer.Init.Period = 10000;
-	timer.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-	timer.Init.CounterMode = TIM_COUNTERMODE_UP;
-	timer.Init.RepetitionCounter = 0;
+	timer2.Instance = TIM2;
+	timer2.Init.Prescaler = 32000;
+	timer2.Init.Period = 100;
+	timer2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	timer2.Init.CounterMode = TIM_COUNTERMODE_UP;
+	timer2.Init.RepetitionCounter = 0;
+
+	timer3.Instance = TIM3;
+	timer3.Init.Prescaler = 32000;
+	timer3.Init.Period = 10;
+	timer3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	timer3.Init.CounterMode = TIM_COUNTERMODE_UP;
+	timer3.Init.RepetitionCounter = 0;
 
 	// Activation du timer
-	HAL_TIM_Base_Init(&timer);
-	HAL_TIM_Base_Start_IT(&timer);
+	HAL_TIM_Base_Init(&timer2);
+	HAL_TIM_Base_Start_IT(&timer2);
+	HAL_TIM_Base_Init(&timer3);
+	HAL_TIM_Base_Start_IT(&timer3);
 
 	// LOGIC
-
-	// Anodes
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, 1);
-
-	// Set all pins on
-
-	int i = 0;
+	nombreAffiche = 0;
 	for(;;) {
-		i%=16;
-		afficheNombre(i);
 		//HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)
 		//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
+
+		nombreAffiche%=256;
 		HAL_Delay(500);
-		i++;
+		nombreAffiche++;
 	}
 }
 
@@ -158,12 +188,14 @@ void afficheNombre(char nombre) {
 
 // Callback du timer (là où on mets notre code)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
-	// Logique
-}
-
-// Configuration du handler (à rajouter dans stm32f1xx_it.c)
-void TIM2_IRQHandler() {
-	// On à besoin d'accèder à la variable globale d'instance (timer)
-	// Il faut donc inclure le .h
-	HAL_TIM_IRQHandler(&timer);
+	if (htim->Instance == TIM3) {
+		statutAnodes = !statutAnodes;
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, statutAnodes);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, !statutAnodes);
+		if (!statutAnodes) afficheNombre(nombreAffiche & 0xF);
+		else afficheNombre(nombreAffiche >> 4);
+	} else {
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, clk_sw);
+		clk_sw=!clk_sw;
+	}
 }

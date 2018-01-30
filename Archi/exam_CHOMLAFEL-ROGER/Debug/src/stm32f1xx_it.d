@@ -51,7 +51,9 @@ src/stm32f1xx_it.o: ../src/stm32f1xx_it.c \
  /home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  /home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
  /home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/HAL_Driver/Inc/stm32f1xx_hal_hcd.h \
- /home/chomlafg/basic-codes-for-TP/Archi/exam_CHOMLAFEL-ROGER/inc/stm32f1xx_it.h
+ /home/chomlafg/basic-codes-for-TP/Archi/exam_CHOMLAFEL-ROGER/inc/stm32f1xx_it.h \
+ /home/chomlafg/basic-codes-for-TP/Archi/exam_CHOMLAFEL-ROGER/inc/main.h \
+ /home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/Utilities/STM32F1xx_Nucleo/stm32f1xx_nucleo.h
 
 /home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -158,3 +160,7 @@ src/stm32f1xx_it.o: ../src/stm32f1xx_it.c \
 /home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/HAL_Driver/Inc/stm32f1xx_hal_hcd.h:
 
 /home/chomlafg/basic-codes-for-TP/Archi/exam_CHOMLAFEL-ROGER/inc/stm32f1xx_it.h:
+
+/home/chomlafg/basic-codes-for-TP/Archi/exam_CHOMLAFEL-ROGER/inc/main.h:
+
+/home/chomlafg/basic-codes-for-TP/Archi/nucleo-f103rb_hal_lib/Utilities/STM32F1xx_Nucleo/stm32f1xx_nucleo.h:

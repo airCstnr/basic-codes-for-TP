@@ -66,6 +66,14 @@
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
 
+char decodeQuartet(char quartet);
+void afficheNombre(char nombre);
+
+// Instance du timer (à mettre en global et dans le .h)
+TIM_HandleTypeDef timer2;
+TIM_HandleTypeDef timer3;
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+
 #endif /* __MAIN_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

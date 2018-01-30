@@ -15,6 +15,7 @@
 #include <cmsis_os.h>
 #endif
 #include "stm32f1xx_it.h"
+#include "main.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -39,4 +40,16 @@ void SysTick_Handler(void)
 #ifdef USE_RTOS_SYSTICK
 	osSystickHandler();
 #endif
+}
+
+// Configuration du handler timer
+void TIM2_IRQHandler() {
+	// On à besoin d'accèder à la variable globale d'instance (timer)
+	// Il faut donc inclure le .h
+	HAL_TIM_IRQHandler(&timer2);
+}
+void TIM3_IRQHandler() {
+	// On à besoin d'accèder à la variable globale d'instance (timer)
+	// Il faut donc inclure le .h
+	HAL_TIM_IRQHandler(&timer3);
 }
