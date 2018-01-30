@@ -53,3 +53,9 @@ void TIM3_IRQHandler() {
 	// Il faut donc inclure le .h
 	HAL_TIM_IRQHandler(&timer3);
 }
+
+// Chargement du handler interruption
+void EXTI9_5_IRQHandler() {
+	HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_6);
+	HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_7);
+}

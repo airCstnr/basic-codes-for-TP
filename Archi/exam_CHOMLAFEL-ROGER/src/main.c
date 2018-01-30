@@ -69,7 +69,7 @@ int main(void)
 {
 	HAL_Init();
 	SystemClock_Config();
-4
+
 	__HAL_RCC_GPIOA_CLK_ENABLE();
 	__HAL_RCC_GPIOB_CLK_ENABLE();
 	__HAL_RCC_GPIOC_CLK_ENABLE();
@@ -111,8 +111,14 @@ int main(void)
 	io_btn_1.Mode  = GPIO_MODE_IT_RISING;
 	io_btn_1.Pull  = GPIO_PULLUP;
 	io_btn_1.Speed = GPIO_SPEED_FREQ_LOW;
-	io_btn_1.Pin   = GPIO_PIN_9;
-	HAL_GPIO_Init(GPIOA, &io_btn_1);
+	io_btn_1.Pin   = GPIO_PIN_6;
+	HAL_GPIO_Init(GPIOB, &io_btn_1);
+
+	io_btn_2.Mode  = GPIO_MODE_IT_RISING;
+	io_btn_2.Pull  = GPIO_PULLUP;
+	io_btn_2.Speed = GPIO_SPEED_FREQ_LOW;
+	io_btn_2.Pin   = GPIO_PIN_7;
+	HAL_GPIO_Init(GPIOA, &io_btn_2);
 
 	// Timer
 	HAL_NVIC_SetPriority(TIM2_IRQn, 3, 0);
@@ -141,15 +147,16 @@ int main(void)
 	HAL_TIM_Base_Init(&timer3);
 	HAL_TIM_Base_Start_IT(&timer3);
 
+	// Activation des interruptions sur btn 1 et 2
+	HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+	HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
 	// LOGIC
 	nombreAffiche = 0;
 	for(;;) {
 		//HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)
 		//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
-
-		nombreAffiche%=256;
-		HAL_Delay(500);
-		nombreAffiche++;
+		HAL_Delay(100);
 	}
 }
 
@@ -194,8 +201,16 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, !statutAnodes);
 		if (!statutAnodes) afficheNombre(nombreAffiche & 0xF);
 		else afficheNombre(nombreAffiche >> 4);
-	} else {
+	} else if (htim->Instance == TIM2) {
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, clk_sw);
 		clk_sw=!clk_sw;
+	}
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (GPIO_Pin==GPIO_PIN_6) {
+		nombreAffiche++;
+	} else {
+		nombreAffiche--;
 	}
 }
