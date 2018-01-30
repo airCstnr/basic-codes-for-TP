@@ -18,4 +18,4 @@ standard à chaque TP.
 
 + [Raphaël C](https://github.com/airCstnr)
 + [Ivan R](https://github.com/Ivan-Roger)
-+ Pierre-Gilles C
++ [Pierre-Gilles C](https://github.com/Nithraniel)
