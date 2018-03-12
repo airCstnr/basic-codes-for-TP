@@ -38,4 +38,4 @@ Auteur : *Raphaël Castanier*
 
 1. `ls ???`
 2. `ls e*.c`
-3. `ls ^[^a]`
+3. `ls[^a]*`
