@@ -13,6 +13,7 @@ standard à chaque TP.
 + [CS357](/C) - C
 + [CE311](/VHDL) - VHDL
 + [CE317](/Archi) - Architecture (Nucléo)
++ [OS308](/OS) - Systèmes d'exploitation
 
 ## Auteurs
 
