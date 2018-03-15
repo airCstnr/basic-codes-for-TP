@@ -46,3 +46,34 @@ Auteur : *Raphaël Castanier*
 6.  `chmod 755 ~`
 7.  `umask`
     `umask 006`
+
+## Redirection des entrées/sorties
+
+1.  `who > file5.txt`
+    `cat file5.txt`
+2.  `pwd > file5.txt`
+    `cat file5.txt` : le contenu a été écrasé
+3.  `ls >> file5.txt`
+    `cat file5.txt` : le contenu a été conservé, la sortie de `ls` a été ajoutée à la fin.
+4.  `ls -l > file5.txt`
+    `cat file5.txt` : le contenu a été écrasé
+    `ls -l 2> file5.txt`
+    `cat file5.txt` : le contenu a été écrasé, mais il n'y avait pas d'erreur
+5.
+    a.
+    *Commande*    : `ls /n/existe/pas > erreur.txt`
+    *Retour*      : `ls: impossible d'accéder à /n/existe/pas: Aucun fichier ou dossier de ce type`
+    *erreur.txt*  : _vide_
+    *Explication* : seule la sortie `stdout` est redirigée vers le fichier `erreur.txt`
+    b.
+    *Comamnde*    : `ls /n/existe/pas 2> erreur.txt`
+    *Retour*      : _vide_
+    *erreur.txt*  : `ls: impossible d'accéder à /n/existe/pas: Aucun fichier ou dossier de ce type`
+    *Explication* : seule la sortie `stderr` est redirigée vers le fichier `erreur.txt`
+    c.
+    *Commande*    : `ls /n/existe/pas &> erreur.txt`
+    *Retour*      : _vide_
+    *erreur.txt*  : `ls: impossible d'accéder à /n/existe/pas: Aucun fichier ou dossier de ce type`
+    *Explication* : la sortie `stderr` et la sortie `stdout` sont redirigées vers le fichier `erreur.txt`
+
+*Fin du CR*
