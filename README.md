@@ -10,10 +10,11 @@ standard à chaque TP.
 
 ## Cours concernés
 
-+ [CS357](/C) - C
-+ [CE311](/VHDL) - VHDL
 + [CE317](/Archi) - Architecture (Nucléo)
++ [CS357](/C) - C
++ [CS318](/Java) - Java
 + [OS308](/OS) - Systèmes d'exploitation
++ [CE311](/VHDL) - VHDL
 
 ## Auteurs
 
