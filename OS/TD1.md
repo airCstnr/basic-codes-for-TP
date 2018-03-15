@@ -39,3 +39,9 @@ Auteur : *Raphaël Castanier*
 1. `ls ???`
 2. `ls e*.c`
 3. `ls[^a]*`
+
+## Exercice 4
+
+Les données sont enregistrées dans le fichier `colonnes.txt`.
+1. `grep PACA colonnes.txt | wc -l`
+2. `sort -k -f 2`
