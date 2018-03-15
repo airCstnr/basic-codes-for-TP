@@ -15,3 +15,14 @@ Auteur : *Raphaël Castanier*
 8. `mv esisar/TP1/* esisar/TP2`
 9. `cp esisar/TP2/* esisar/TP3`
 10. `rm -r esisar/TP3`
+
+## Commande ls et caractères génériques
+
+`cd /usr/bin`
+1. `ls ????`
+2. `ls ????*`
+3. `ls *-*`
+4. `ls ???-*`
+5. `ls [abc]*`
+6. `ls [^aeiou]*`
+7. `ls [^c-v]*`
