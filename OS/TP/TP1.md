@@ -29,8 +29,20 @@ Auteur : *Raphaël Castanier*
 
 ## Gestion des droits d'accès
 
-1.  `./file3.sh`
+1.  `rw-------`
+    `./file3.sh`
     `-bash: ./file3.sh: Permission non accordée`
     `chmod u+x file3.sh`
     `./file3.sh`
     `Mon premier script!`
+2.  `ls -ld ~`
+    `rwxr-xr-x`
+3.  `chmod 700 ~`
+    Mon binôme ne peut pas affichier la liste des fichiers de mon `home`
+    Il ne peut pas exécuter mon fichier `file3.sh`
+4.  `chmod go+x ~`
+5.  Mon binôme ne peut pas affichier la liste des fichiers de mon `home`,
+    mais il peut exécuter mon fichier `file3.sh`
+6.  `chmod 755 ~`
+7.  `umask`
+    `umask 006`
