@@ -26,3 +26,11 @@ Auteur : *Raphaël Castanier*
 5. `ls [abc]*`
 6. `ls [^aeiou]*`
 7. `ls [^c-v]*`
+
+## Gestion des droits d'accès
+
+1.  `./file3.sh`
+    `-bash: ./file3.sh: Permission non accordée`
+    `chmod u+x file3.sh`
+    `./file3.sh`
+    `Mon premier script!`
