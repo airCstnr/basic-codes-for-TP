@@ -74,7 +74,42 @@ public class Main {
 	 * Affiche les combinaisons possibles de pièces de 2, 5 et 10 centimes pour faire 1€
 	 */
 	public static void afficherCombinaisons() {
-		System.out.println("Combinaisons...");
+		int nb_combinaisons=0;
+		for(int nb2=50; nb2>=0; nb2--) {
+			for(int nb5=20; nb5>=0; nb5--) {	
+				for(int nb10=10; nb10>=0; nb10--) {
+					if(nb5*5 + nb2*2 + nb10*10 == 100) {
+						afficherLigne(nb2, nb5, nb10);
+						nb_combinaisons++;
+		}}}}
+		System.out.println("Nombre de combinaisons : " + nb_combinaisons);
 	}
 
+	/**
+	 * Affiche la ligne de combinaison.
+	 * @param nb2
+	 * @param nb5
+	 * @param nb10
+	 */
+	public static void afficherLigne(int nb2, int nb5, int nb10) {
+		boolean alone = true;
+		System.out.print("1€ = ");
+		if(nb2!=0)
+		{
+			System.out.print(nb2 + " x 2cts");
+			alone=false;
+		}
+		if(nb5!=0)
+		{
+			if(!alone) {System.out.print(" + ");}
+			System.out.print(nb5 + " x 5cts");
+			alone=false;
+		}
+		if(nb10!=0)
+		{
+			if(!alone) {System.out.print(" + ");}
+			System.out.print(nb10 + " x 10cts");
+		}
+		System.out.println();
+	}
 }
