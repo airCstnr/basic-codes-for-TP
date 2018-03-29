@@ -1,3 +1,9 @@
+// TODO : modifier la saisie
+// 1. notes comprises entre 0 et 20
+// 2. saisie propre à une fonction
+// 3. coefficients strictement positifs
+
+
 import java.util.Scanner;
 
 /**
@@ -15,18 +21,14 @@ public class TD3 {
 		System.out.println("### Main ###");
 		
 		exercice1();
+		//exercice2(); // exercice 1 modifié
 		
 		System.out.println("### Fin Main ###");
 
 	}
 	
 	/**
-	 * Ecrivez un programme qui commence par demander le nombre N de notes, et ensuite
-		demande chacune des notes. Les notes seront stockées dans un tableau de taille N
-		Ensuite, le programme demande le coefficient de chaque note et stocke aussi ces coefficients
-		dans un tableau.
-		Votre programme calcule ensuite la moyenne des notes en tenant compte des coefficients et
-		affiche le résultat.
+	 * Exercice 1
 	 */
 	public static void exercice1() {
 		
@@ -55,15 +57,76 @@ public class TD3 {
 			System.out.println("Saisir les " + nb_notes + " coefficients :");
 			coefs = demanderDoubles(nb_notes);
 			
-			// calcule l'espérance
-			esperance = esperance(notes, coefs, nb_notes);			
+			// statistiques(espérance, min, max)
+			statistiques(notes, coefs, nb_notes);
 
-			// ajoute un espace pour faire joli
-			System.out.println();
+			
+			// afficher la liste des notes non triée
+			System.out.println("Liste avant le tri :");
+			afficherListe(notes);
+			
+			// tri des notes
+			triBulle(notes);
+			
+			// afficher la liste des notes
+			System.out.println("Liste triée :");
+			afficherListe(notes);
 		}
+	}
+	
+	
+	/**
+	 * Affiche une liste de valeurs
+	 * @param liste
+	 */
+	public static void afficherListe(double[] liste) {
+		for (double d : liste) {
+			System.out.println(d);
+		}
+	}
+
+	/**
+	 * Trie les valeurs à l'aide d'un tri à bulle
+	 * @param val valeurs à trier
+	 * @return valeurs triées par ordre croissant 
+	 */
+	public static double[] triBulle(double[] val) {
+		boolean trie=false;
+		while(!trie) {
+			// on considère la liste triée
+			trie=true;
+			for (int i = 0; i < val.length-1; i++) {
+				// si l'élément à gauche est plus grand que l'élément à droite, les échanger
+				if(val[i]>val[i+1]) {
+					trie=false; // la liste n'est pas triée
+					double tmp=val[i];
+					val[i] = val[i+1];
+					val[i+1] = tmp;
+				}
+			}
+		}
+		return val;
+	}
+
+	/**
+	 * Statiques concernant la plage de valeurs et les coefficients, pour n valeurs
+	 * @param x valeurs
+	 * @param p coefficients
+	 * @param n nombre de valeurs
+	 */
+	public static void statistiques(double x[], double p[], int n) {
+
+		// calcule l'espérance
+		System.out.println("Esperance = " + esperance(x, p, n));
 		
-		// affiche le résultat
-		System.out.println("Esperance = " + esperance);
+		// note max et min
+		double max=0, min=20;
+		for (int i = 0; i < n; i++) {
+			if(x[i]>max) {max=x[i];}
+			if(x[i]<min) {min=x[i];}
+		}
+		System.out.println("Max = " + max);
+		System.out.println("Min = " + min);
 	}
 	
 	/**
