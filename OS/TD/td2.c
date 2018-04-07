@@ -1,5 +1,6 @@
 /*
 Auteur : Raphaël Castanier
+Commande de compilation : gcc -o prog td2.c -std=c11 -Wall -Werror
 
 TD2 - Gestion des processus
 
@@ -20,9 +21,11 @@ Ecrire un programme C qui permet à un processus de créer dix processus fils. C
 processus fils affiche le double de la valeur de son PID à l’écran et se termine.
 */
 
-#include <stdio.h>     // printf
-#include <stdlib.h>    // exit
-#include <sys/wait.h>  // wait
+#include <stdio.h>      // printf
+#include <stdlib.h>     // exit
+#include <unistd.h>     // getpid, sleep
+#include <sys/wait.h>   // wait
+#include <sys/types.h>  // pid_t
 
 void traitementFils()
 {
@@ -57,9 +60,35 @@ void exercice1()
     exit(EXIT_SUCCESS);
 }
 
+void exercice4()
+{
+    pid_t p = 1;
+    int i;
+    for (i = 0; i < 10; i++) {
+        // il n'y a que le père qui puisse créer des fils
+        if(p!=0) {
+            p = fork(); // le père fork
+        }
+        else {
+            break; // un fils sort fissa de la boucle
+            /* Note : Cette méthode n'est peu-être pas un bon exemple pour la jeunesse,
+             car on ne doit pas (de manière générale) faire de break dans une boucle.
+             Ici, chaque fils doit sortir de la boucle, car il ne doit s'exécuter qu'une fois.
+             Cela permet une économie de 9!-1 passages dans la boucle. */
+        }
+    }
+
+    // seuls les fils doivent afficher ce message
+    if (p == 0) {
+        printf("Fils %i\tPID : %i\t2*PID : %i\n", i, getpid(), 2*getpid());
+    }
+
+    exit(EXIT_SUCCESS);
+}
+
 int main(int argc, char const *argv[])
 {
-    exercice1();
-    // exercice2();
+    // exercice1();
+    exercice4();
     return 0;
 }
