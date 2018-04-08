@@ -1,2 +1,7 @@
-/.metadata/
-/.recommenders/
+.metadata
+.recommenders
+.settings
+.project
+.classpath
+
+*.class
