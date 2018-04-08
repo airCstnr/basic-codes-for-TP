@@ -5,7 +5,8 @@
 public class Point {
 	
 	private String nom;
-	private double abscisse, ordonnee;
+	//private double abscisse, ordonnee;
+	private double rayon, theta;
 	
 	/**
 	 * Initialise le point
@@ -13,10 +14,15 @@ public class Point {
 	 * @param abscisse
 	 * @param ordonnee
 	 */
-	public void initialise(String nom, double abscisse, double ordonnee) {
+//	public void initialise(String nom, double abscisse, double ordonnee) {
+//		this.nom = nom;
+//		this.abscisse = abscisse;
+//		this.ordonnee = ordonnee;
+//	}
+	public void initialise(String nom, double rayon, double theta) {
 		this.nom = nom;
-		this.abscisse = abscisse;
-		this.ordonnee = ordonnee;
+		this.rayon = rayon;
+		this.theta = theta;
 	}
 	
 	/**
@@ -32,8 +38,12 @@ public class Point {
 	 * @param dy
 	 */
 	public void translate(double dx, double dy) {
-		abscisse += dx;
-		ordonnee += dy;
+//		abscisse += dx;
+//		ordonnee += dy;
+		double new_x = this.getX() + dx;
+		double new_y = this.getY() + dy;
+		this.rayon = Math.sqrt(new_x*new_x+new_y*new_y);
+		this.theta = Math.tan(new_y / new_x);
 	}
 	
 	/**
@@ -41,24 +51,27 @@ public class Point {
 	 * @param theta
 	 */
 	public void roatate(double theta) {
-		double x = abscisse;
-		double y = ordonnee;
-		abscisse = x*Math.cos(theta) + y*Math.sin(theta);
-		ordonnee = -x*Math.sin(theta) + y*Math.cos(theta);
+		this.theta += theta;
+//		double x = abscisse;
+//		double y = ordonnee;
+//		abscisse = x*Math.cos(theta) + y*Math.sin(theta);
+//		ordonnee = -x*Math.sin(theta) + y*Math.cos(theta);
 	}
 	
 	/**
 	 * @return the abscisse
 	 */
 	public double getX() {
-		return abscisse;
+//		return abscisse;
+		return this.rayon * Math.cos(this.theta);
 	}
 
 	/**
 	 * @return the ordonnee
 	 */
 	public double getY() {
-		return ordonnee;
+//		return ordonnee;
+		return this.rayon * Math.sin(this.theta);
 	}
 
 	@Override
