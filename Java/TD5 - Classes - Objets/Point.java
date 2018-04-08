@@ -47,8 +47,22 @@ public class Point {
 		ordonnee = -x*Math.sin(theta) + y*Math.cos(theta);
 	}
 	
+	/**
+	 * @return the abscisse
+	 */
+	public double getX() {
+		return abscisse;
+	}
+
+	/**
+	 * @return the ordonnee
+	 */
+	public double getY() {
+		return ordonnee;
+	}
+
 	@Override
 	public String toString() {
-		return nom + " = (" + abscisse + ", " + ordonnee + ")";
+		return nom + " = (" + this.getX() + ", " + this.getY() + ")";
 	}
 }
