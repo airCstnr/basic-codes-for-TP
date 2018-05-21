@@ -3,9 +3,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("\t--- TD5 ---\n");
-		testPoint();
-		testSegment();
-		testSegment2();
+//		testPoint();
+//		testSegment();
+//		testSegment2();
+//		testChrono1();
+		testChronoGUI();
 		System.out.println("\t--- Fin TD5 ---");
 	}
 	
@@ -75,6 +77,42 @@ public class Main {
 		point2.initialise("There", 3, 4);
 		s.initialise(point1, point2);
 		s.affiche();
+		System.out.println();
 	}
 
+	
+	public static void testChrono1() {
+		System.out.println("\ttestChrono1");
+		Chrono1 c = new Chrono1();
+		System.out.println("C1 = " + c.toString());
+		
+		// exception
+		try {
+			Chrono1 ex = new Chrono1(0, 0, -1);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		c.init(0, 0, 10);
+		while(c.rebours()) {
+			System.out.println(c.toString());
+			try
+			{
+				Thread.sleep(1000);
+			}
+			catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		System.out.println("BONNE ANNEE!!");
+		System.out.println();
+	}
+	
+	public static void testChronoGUI() {
+		System.out.println("\ttestChronoGUI");
+		ChronoGUI gui = new ChronoGUI();
+		System.out.println();
+	}
 }
