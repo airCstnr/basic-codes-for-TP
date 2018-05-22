@@ -1,7 +1,7 @@
 // Auteurs : Raphaël Castanier
 // Compilation :  gcc -o prog exercice2.c
 
-// Ignore les signaux SIGINT et SIGQUIT
+// Déroute le signal SIGINT
 
 #include <unistd.h>
 #include <stdio.h>
