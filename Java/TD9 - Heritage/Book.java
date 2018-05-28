@@ -73,7 +73,7 @@ public class Book {
 		return dateAchat;
 	}
 
-	/**
+	/** Modifie la date d'achat du livre
 	 * @param dateAchat the dateAchat to set
 	 */
 	public void setDateAchat(String dateAchat) {
@@ -100,13 +100,14 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Book ["
-				+ (tag != null ? "tag=" + tag + ", " : "")
-				+ (auteur != null ? "auteur=" + auteur + ", " : "")
-				+ (titre != null ? "titre=" + titre + ", " : "")
-				+ (dateAchat != null ? "dateAchat=" + dateAchat + ", " : "")
-				+ "prixAchat=" + prixAchat + "€)"
-				+ "]";
+		return titre + ", " + auteur + " (" + tag + ", " + dateAchat + ", " + prixAchat + "€)"; 
+//		return "Book ["
+//				+ (tag != null ? "tag=" + tag + ", " : "")
+//				+ (auteur != null ? "auteur=" + auteur + ", " : "")
+//				+ (titre != null ? "titre=" + titre + ", " : "")
+//				+ (dateAchat != null ? "dateAchat=" + dateAchat + ", " : "")
+//				+ "prixAchat=" + prixAchat + "€)"
+//				+ "]";
 	}
 	
 	
