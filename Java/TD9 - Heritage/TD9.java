@@ -43,6 +43,21 @@ public class TD9 {
 		}
 		System.out.println("Liste des livres trouvés :\n" + foundByTitle.toString());
 		
+		if(s.getBook("12345")!=null)
+		{
+			System.out.println(s.getBook("12345").getStatus());
+		}
+		
+		s.getBook("12345").setStatus(Status.EMPRUNTE);
+		
+		if(s.getBook("12345")!=null)
+		{
+			System.out.println(s.getBook("12345").getStatus());
+		}
+		
+		s.displayAllBook();
+
+		
 		System.out.println();
 	}
 

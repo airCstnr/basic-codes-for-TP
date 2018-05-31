@@ -20,7 +20,10 @@ public class BookStore {
 	 * @param prixAchat
 	 */
 	public void addBook(String tag, String auteur, String titre, String dateAchat, double prixAchat) {
-		books.add(new Book(tag, auteur, titre, dateAchat, prixAchat));
+		if(this.getBook(tag)==null)
+		{
+			books.add(new Book(tag, auteur, titre, dateAchat, prixAchat));
+		}
 	}
 	
 	/**
@@ -36,11 +39,7 @@ public class BookStore {
 	 * @param tag
 	 */
 	public void removeBook(String tag) {
-		for (Book book : books) {
-			if(book.getTag().equals(tag)) {
-				books.remove(book);
-			}
-		}
+		books.remove(this.getBook(tag)!=null?this.getBook(tag):null);
 	}
 	
 	/**
@@ -52,6 +51,31 @@ public class BookStore {
 			book.printInfo();
 		}
 		System.out.println("Books count : " + books.size());
+	}
+	
+	private boolean exists(String tag) {
+		for (Book book : books) {
+			if(book.getTag().equalsIgnoreCase(tag)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	/**
+	 * Renvoie le livre correspndant à un tag
+	 * @param tag
+	 * @return livre
+	 */
+	public Book getBook(String tag) {
+		if(exists(tag))
+		{
+			for (Book book : books) {
+				if(book.getTag().equalsIgnoreCase(tag)) {
+					return book;
+				}
+			}
+		}
+		return null;
 	}
 	
 	/**
@@ -97,9 +121,15 @@ public class BookStore {
 		this.addBook(tag, auteur, titre, dateAchat, prixAchat);
 	}
 	
-	public Status getBookStatus() {
-		// todo
-		return Status.NON_TROUVE;
+	/**
+	 * Renvoie l'etat du livre
+	 * @param tag
+	 * @return status
+	 */
+	public Status getBookStatus(String tag) {
+		return exists(tag) ? this.getBook(tag).getStatus() : Status.NON_TROUVE;
 	}
+	
+	
 
 }

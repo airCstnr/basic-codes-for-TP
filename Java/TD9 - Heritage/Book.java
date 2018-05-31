@@ -6,8 +6,10 @@ public class Book {
 	private String titre;
 	private String dateAchat;
 	private double prixAchat;
+	private Status status;
 	
 	/**
+	 * Crée un nouveau livre, disponible
 	 * @param tag
 	 * @param auteur
 	 * @param titre
@@ -20,9 +22,8 @@ public class Book {
 		this.titre = titre;
 		this.dateAchat = dateAchat;
 		this.prixAchat = prixAchat;
+		this.status = Status.DISPONIBLE;
 	}
-
-
 
 	/**
 	 * @return the tag
@@ -94,13 +95,30 @@ public class Book {
 		this.prixAchat = prixAchat;
 	}
 	
+	/**
+	 * @return the status
+	 */
+	public Status getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	/**
+	 * Affiche les informations du livre
+	 */
 	public void printInfo() {
 		System.out.println(this.toString());
 	}
 
 	@Override
 	public String toString() {
-		return titre + ", " + auteur + " (" + tag + ", " + dateAchat + ", " + prixAchat + "€)";
+		return titre + ", " + auteur + " (" + tag + ", " + dateAchat + ", " + prixAchat + "€) [" + status + "]";
 	}
 	
 	
