@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class BookStore {
 
@@ -39,7 +40,7 @@ public class BookStore {
 	 * @param tag
 	 */
 	public void removeBook(String tag) {
-		books.remove(this.getBook(tag)!=null?this.getBook(tag):null);
+		if(exists(tag)) {books.remove(this.getBook(tag)); }
 	}
 	
 	/**
@@ -130,6 +131,12 @@ public class BookStore {
 		return exists(tag) ? this.getBook(tag).getStatus() : Status.NON_TROUVE;
 	}
 	
-	
+	/**
+	 * Modifie l'etat du livre
+	 * @param tag
+	 */
+	public void setBookStatus(String tag, Status status) {
+		if(exists(tag)) this.getBook(tag).setStatus(status);
+	}
 
 }
