@@ -61,14 +61,14 @@ public class TD9 {
 		// obtention d'un livre
 		if(s.getBook("12345")!=null)
 		{
-			System.out.println(s.getBook("12345").getStatus());
+			System.out.println(s.getBook("12345").getEtat());
 		}
 		
 		// modification du statut
-		s.getBook("12345").setStatus(Status.EMPRUNTE);
-		System.out.println(s.getBook("12345").getStatus());
+		s.getBook("12345").setEtat(Status.EMPRUNTE);
+		System.out.println(s.getBook("12345").getEtat());
 		s.setBookStatus("12345", Status.DISPONIBLE );
-		System.out.println(s.getBook("12345").getStatus());
+		System.out.println(s.getBook("12345").getEtat());
 
 		
 		System.out.println();

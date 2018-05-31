@@ -12,6 +12,11 @@ public class BookStore {
 		books = new ArrayList<>();
 	}
 	
+//	void addCD(String tag, String titre, String dateAchat, double prixAchat, Status etat, qmlskfqsmdfkljqmsf)
+//	{
+//		
+//	}
+	
 	/**
 	 * Ajoute un livre à la liste
 	 * @param tag
@@ -128,7 +133,7 @@ public class BookStore {
 	 * @return status
 	 */
 	public Status getBookStatus(String tag) {
-		return exists(tag) ? this.getBook(tag).getStatus() : Status.NON_TROUVE;
+		return exists(tag) ? this.getBook(tag).getEtat() : Status.NON_TROUVE;
 	}
 	
 	/**
@@ -136,7 +141,7 @@ public class BookStore {
 	 * @param tag
 	 */
 	public void setBookStatus(String tag, Status status) {
-		if(exists(tag)) this.getBook(tag).setStatus(status);
+		if(exists(tag)) this.getBook(tag).setEtat(status);
 	}
 
 }
