@@ -100,14 +100,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return titre + ", " + auteur + " (" + tag + ", " + dateAchat + ", " + prixAchat + "€)"; 
-//		return "Book ["
-//				+ (tag != null ? "tag=" + tag + ", " : "")
-//				+ (auteur != null ? "auteur=" + auteur + ", " : "")
-//				+ (titre != null ? "titre=" + titre + ", " : "")
-//				+ (dateAchat != null ? "dateAchat=" + dateAchat + ", " : "")
-//				+ "prixAchat=" + prixAchat + "€)"
-//				+ "]";
+		return titre + ", " + auteur + " (" + tag + ", " + dateAchat + ", " + prixAchat + "€)";
 	}
 	
 	
