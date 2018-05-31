@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class TD9 {
 
@@ -24,6 +25,23 @@ public class TD9 {
 		s.addBook(b);
 		s.addBook("12345", "General Kenobi", "You're a bold one!", "30/11/1996", 150.66);
 		s.displayAllBook();
+		
+		s.removeBook("0123");
+		s.displayAllBook();
+		
+		ArrayList<Book> foundByAuthor = s.findBookByAuthor("General Kenobi");
+		if(foundByAuthor.size() == 0) {
+			assert(false);
+		}
+		System.out.println("Liste des livres trouvés :\n" + foundByAuthor.toString());
+		
+		
+		
+		ArrayList<Book> foundByTitle = s.findBookByTitle("You're a bold one!");
+		if(foundByTitle.size() == 0) {
+			assert(false);
+		}
+		System.out.println("Liste des livres trouvés :\n" + foundByTitle.toString());
 		
 		System.out.println();
 	}
