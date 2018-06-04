@@ -12,7 +12,7 @@ public class TD11 {
 	public static void testPoint() {
 		System.out.println("\tTest Point");
 		Point p = new Point(0, 0);
-		System.out.println(p);
+		p.affiche();
 		System.out.println();
 	}
 	
