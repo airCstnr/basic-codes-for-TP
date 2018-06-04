@@ -1,14 +1,15 @@
 
-/* Auteur : Raphaël Castanier */
-
-// compilation :  gcc exercice1.c -o prog -Wall -Werror --std=c99
-
-// Exercice 1 : Tube ordinaire
+// OS308   : Système d'exploitation
+// TD4     : Communication par tubes
+// Auteur  : Raphaël Castanier
+// Date    : 04/06/2018
+// Compil. :  gcc exercice1.c -o prog -Wall -Werror --std=c99
+// Exercice 1 - Tube ordinaire
 
 #include <sys/types.h>  // pid_t
 #include <unistd.h>     // pipe, fork, read, write
 #include <string.h>     // strlen
-#include <stdio.h>      // fprintf
+#include <stdio.h>      // fprintf, getc
 #include <stdlib.h>     // exit
 
 int main(int argc, char const *argv[]) {
@@ -23,6 +24,7 @@ int main(int argc, char const *argv[]) {
 
     // fork
     pid_t f = fork();
+
     if(f==-1)
     {
         close(writeDescriptor); // fermeture par le père du descripteur d'ecriture
@@ -34,9 +36,13 @@ int main(int argc, char const *argv[]) {
     if (f!=0)
     {
         close(readDescriptor); // fermeture par le père du descripteur de lecture
-        char* hello = "hello world"; // phrase simple
-        write(writeDescriptor, hello, strlen(hello)); // ecriture dans le pipe
-        //close(writeDescriptor); // fermeture par le père du descripteur d'ecriture
+        char contenu;
+        while(1)
+        {
+            contenu = getc(stdin); // lecture de caractère depuis l'entrée standard
+            write(writeDescriptor, &contenu, 1); // ecriture dans le pipe
+        }
+        close(writeDescriptor); // fermeture par le père du descripteur d'ecriture
     }
 
     // fils : lit le pipe et l'affiche
@@ -46,11 +52,12 @@ int main(int argc, char const *argv[]) {
         char c;
         while(1) // lecture tant que le pipe contient du contenu
         {
-            if(read(readDescriptor, &c, 1)==0) // lecture d'un caractère du pipe
-                break;
-            fprintf(stdout, "-%c-\n", c); // affichage du caractère
+            if(read(readDescriptor, &c, 1)<1)   // lecture d'un caractère du pipe
+                break;                          // sortie si plus rien à lire
+            if(c!='\n')                         // eviter le retour à la ligne
+                fprintf(stdout, "-%c-\n", c);   // affichage du caractère
         }
-        //close(readDescriptor); // fermeture par le fils du descripteur de lecture
+        close(readDescriptor); // fermeture par le fils du descripteur de lecture
     }
 
     return EXIT_SUCCESS;
