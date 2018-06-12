@@ -1,4 +1,6 @@
 import java.awt.Graphics;
+import java.util.Random;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -32,11 +34,16 @@ public class Fenetre02 {
 	class Dessin extends JPanel {
 		int x, y;
 		int signeX, signeY;
+		private Random r;
+		
+		private void init() {
+			x = getWidth()/2;
+			y = getWidth()/2;
+		}
+		
 		public Dessin()	{
-			x = 0;
-			y = 0;
-			signeX = 1;
-			signeY = 1;
+			init();
+			r = new Random();
 		}
 		
 		/**
@@ -44,15 +51,11 @@ public class Fenetre02 {
 		 * Si la balle atteint un bord, elle change de sens
 		 */
 		public void deplacer() {
-			x += signeX*10;
-			y += signeY*10;
+			x += (r.nextInt(3)-1)*r.nextDouble()*50;
+			y += (r.nextInt(3)-1)*r.nextDouble()*50;
 			
-			if (x > getWidth() || x < 0) {
-				signeX*=-1;
-			}
-			
-			if (y > getHeight() || y < 0) {
-				signeY*=-1;
+			if (x > getWidth() || x < 0 || y > getHeight() || y < 0) {
+				init();
 			}
 		}
 		
