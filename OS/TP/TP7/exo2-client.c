@@ -7,7 +7,7 @@ const char *PIPE_PATH = "/tmp/fifo";
  * Ce programme se connecte à un serveur via un pipe nommé
  * et lui envoie le message en premier argument.
  * Author : Ivan ROGER <ivan.bob.emile@gmail.com>
- * Date : 2018-10-11
+ * Date : 2018-06-11
  */
 int main(int argc, char **argv) {
 

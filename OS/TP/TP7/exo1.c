@@ -10,9 +10,9 @@
 /**
  * Ce programme créé deux fils qui écrivent un message dans un pipe.
  * Le père écoute sur les deux pipes et affiche les messages reçus.
- * Author : Gaëtan CHOMLAFEL <gaetan.chomlafel@etu.esisar.grenoble-inp.fr>
+ * Author : Gaëtan CHOMLAFEL <gaetan.chom@gmail.com>
  * Author : Ivan ROGER <ivan.bob.emile@gmail.com>
- * Date : 2018-10-11
+ * Date : 2018-06-11
  */
 int main(void) {
 
@@ -64,7 +64,8 @@ int main(void) {
 
 			close(p2[0]); // Fermeture du descripteur de lecture
 
-			write(p2[1], "Je suis le fils 2", strlen("Je suis le fils 2")+1); // Envoi du message
+      // Envoi du message
+			write(p2[1], "Je suis le fils 2", strlen("Je suis le fils 2")+1);
 
 			close(p2[1]); // Fermeture du descripteur d'écriture
 
@@ -78,7 +79,8 @@ int main(void) {
 
 		close(p1[0]); // Fermeture du descripteur de lecture
 
-		write(p1[1], "Je suis le fils 1", strlen("Je suis le fils 1")+1); // Envoi du message
+    // Envoi du message
+		write(p1[1], "Je suis le fils 1", strlen("Je suis le fils 1")+1);
 
 		close(p1[1]); // Fermeture du descripteur d'écriture
 

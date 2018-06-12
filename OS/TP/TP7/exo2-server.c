@@ -23,7 +23,7 @@ FILE *tunnel = NULL;
  * écoute dessus. Dès qu'il reçoit un message il l'affiche.
  * Il se termine au signal SIGINT.
  * Author : Ivan ROGER <ivan.bob.emile@gmail.com>
- * Date : 2018-10-11
+ * Date : 2018-06-11
  */
 int main(int argc, char **argv) {
 	UNUSED(argc);
