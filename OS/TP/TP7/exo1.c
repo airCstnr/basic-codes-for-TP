@@ -1,93 +1,105 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h> // Pour fork()
-#include <string.h> // Pour strlen()
-#include <sys/types.h> // Pour pid_t
-#include <sys/wait.h> // Pour waitpid()
 
-#define BUFFER_SIZE 256
+// OS308   : Système d'exploitation
+// TP7     : Communication par tube
+// Auteur  : CASTANIER Raphaël, RIUS BERNAL Joffrey
+// Date    : 07/06/2018
+// Compil. : gcc exo1.c -o prog -Wall -Werror -Wextra --std=c99
+// Exercice 1 - Tube ordinaire
 
-/**
- * Ce programme créé deux fils qui écrivent un message dans un pipe.
- * Le père écoute sur les deux pipes et affiche les messages reçus.
- * Author : Gaëtan CHOMLAFEL <gaetan.chom@gmail.com>
- * Author : Ivan ROGER <ivan.bob.emile@gmail.com>
- * Date : 2018-06-11
- */
-int main(void) {
 
-	int p1[2], p2[2]; // Descripteurs des pipes
+#include <sys/types.h>  // pid_t
+#include <unistd.h>     // pipe, fork, read, write
+#include <string.h>     // strlen
+#include <stdio.h>      // fprintf, getc
+#include <stdlib.h>     // exit
 
- 	char buffer[BUFFER_SIZE] = {0};
+#define VAL_MAX 1024    // taille du buffer
 
-	// Création des pipes
-	if (pipe(p1) == -1) {
-    fprintf(stderr, "Impossible de créer le premier pipe !\n");
-    exit(EXIT_FAILURE);
-  }
+int main (void)
+{
+    // creation du pipe
+    int p1[2];
+    int p2[2];
+    if (pipe(p1) == -1) goto error;
+    if (pipe(p2) == -1) goto error;
 
-	if (pipe(p2) == -1) {
-    fprintf(stderr, "Impossible de créer le second pipe !\n");
-    exit(EXIT_FAILURE);
-  }
+    // descripteurs
+    int readDescriptor1  = p1[0];
+    int writeDescriptor1 = p1[1];
+    int readDescriptor2  = p2[0];
+    int writeDescriptor2 = p2[1];
 
-	pid_t pid = fork(); // On créé le premier fils
+    // fork
+    pid_t fils1 = fork();
+    if (fils1 == -1) goto error;
 
-	if(pid > 0 ) {
-		// Père
+    // Fils1
+    if (fils1 == 0)
+    {
+        // fermeture des descripteurs inutilisés
+        close(readDescriptor1); 
+        close(readDescriptor2); 
+        close(writeDescriptor2);
 
-		pid_t pid2 = fork(); /* On créé le deuxième fils */
+        char* message1 = "Je suis le premier fils";
+        write(writeDescriptor1, message1, strlen(message1)+1); // +1 pour le caractère de fin de chaine
 
-		if (pid2 > 0) {
-			// Père
-
-			// Fermeture des descripteurs d'écriture
-			close(p1[1]);
-			close(p2[1]);
-
-			// Attente des fils, écriture terminée
-			waitpid(pid2, NULL, 0);
-			waitpid(pid, NULL, 0);
-
-			// Lecture et affichage du premier message (Fils 1)
-			read(p1[0], buffer, BUFFER_SIZE); // Lecture dans le pipe
-			printf("1) \"%s\"\n", buffer); // Affichage
- 			close(p1[0]); // Fermeture du descripteur de lecture
-
-			// Lecture et affichage du deuxième message (Fils 2)
-			read(p2[0], buffer, BUFFER_SIZE); // Lecture dans le pipe
-			printf("2) \"%s\"\n", buffer); // Affichage
-			close(p2[0]); // Fermeture du descripteur de lecture
-
-		} else if (pid2 == 0) {
-			// Fils 2
-
-			close(p2[0]); // Fermeture du descripteur de lecture
-
-      // Envoi du message
-			write(p2[1], "Je suis le fils 2", strlen("Je suis le fils 2")+1);
-
-			close(p2[1]); // Fermeture du descripteur d'écriture
-
-		} else {
-      fprintf(stderr, "Impossible de créer le second fils !\n");
-      exit(EXIT_FAILURE);
+        close(writeDescriptor1);  // fermeture par le fils du descripteur d'ecriture
     }
 
-	} else if (pid == 0) {
-		// Fils 1
+    // Pere
+    if (fils1 != 0) 
+    {
+        // fork
+        pid_t fils2 = fork();
+        if (fils2 == -1) goto error;
 
-		close(p1[0]); // Fermeture du descripteur de lecture
+        // Fils2
+        if (fils2 == 0) 
+        {
+            // fermeture des descripteurs inutilisés
+            close(readDescriptor2); 
+            close(readDescriptor1); 
+            close(writeDescriptor1);
 
-    // Envoi du message
-		write(p1[1], "Je suis le fils 1", strlen("Je suis le fils 1")+1);
+            char* message2 = "Je suis le deuxieme fils";
+            write(writeDescriptor2, message2, strlen(message2)+1); // +1 pour le caractère de fin de chaine
 
-		close(p1[1]); // Fermeture du descripteur d'écriture
+            close(writeDescriptor2);  // fermeture par le fils du descripteur d'ecriture
+        }
 
-	} else {
-    fprintf(stderr, "Impossible de créer le premier fils !\n");
-    exit(EXIT_FAILURE);
-  }
+        // Pere
+        else 
+        {
+            // fermeture des descripteurs inutilisés
+            close(writeDescriptor1);
+            close(writeDescriptor2);
 
-  return (EXIT_SUCCESS);
+            // buffers
+            char contenu1[VAL_MAX];
+            char contenu2[VAL_MAX];
+
+            // lecture de tubes et gestion d'erreur
+            if (read(readDescriptor1, contenu1, VAL_MAX) == 0) goto error;
+            if (read(readDescriptor2, contenu2, VAL_MAX) == 0) goto error;
+
+            // affichage du contenu lu
+            printf("%s\n", contenu1);
+            printf("%s\n", contenu2);
+
+            // fermeture des descripteurs de lecture
+            close(readDescriptor1);
+            close(readDescriptor2);
+        }
+    }
+
+    return EXIT_SUCCESS;
+
+    // gestion de la fermeture des tubes en cas d'erreur
+    error:
+        close(writeDescriptor1);
+        close(writeDescriptor2);
+        close(readDescriptor1);
+        close(readDescriptor2);
+        exit(EXIT_FAILURE);
 }
