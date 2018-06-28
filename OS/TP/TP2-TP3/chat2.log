@@ -1,0 +1,355 @@
+20120930 14:50 LOGIN_SUCCESS user connected to chat with login gibbs
+20120930 14:52 LOGIN_SUCCESS user connected to chat with login dinozzo
+20120930 14:53 LOGIN_FAIL    unknown user todd
+20120930 14:54 MESSAGE_SENT  gibbs --> dinozzo
+20120930 14:55 LOGIN_SUCCESS user connected to chat with login sciuto
+20120930 14:55 MESSAGE_SENT  sciuto --> gibbs
+20120930 14:56 LOGIN_SUCCESS user connected to chat with login mcgee
+20120930 14:56 LOGIN_SUCCESS user connected to chat with login david
+20120930 14:57 LOGIN_SUCCESS user connected to chat with login palmer
+20120930 14:58 LOGIN_SUCCESS user connected to chat with login vance
+20120930 15:00 MESSAGE_SENT  vance --> mcgee
+20120930 15:00 MESSAGE_SENT  mcgee --> dinozzo
+20120930 15:00 MESSAGE_SENT  sciuto --> palmer
+20120930 15:00 MESSAGE_SENT  vance --> sciuto
+20120930 15:00 MESSAGE_SENT  vance --> dinozzo
+20120930 15:01 MESSAGE_SENT  david se parle à lui-même
+20120930 15:01 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:01 MESSAGE_SENT  vance --> dinozzo
+20120930 15:01 MESSAGE_SENT  david --> vance
+20120930 15:01 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:01 MESSAGE_SENT  palmer --> gibbs
+20120930 15:02 MESSAGE_SENT  palmer se parle à lui-même
+20120930 15:02 MESSAGE_SENT  david se parle à lui-même
+20120930 15:02 MESSAGE_SENT  david --> gibbs
+20120930 15:02 MESSAGE_SENT  gibbs --> vance
+20120930 15:02 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:02 MESSAGE_SENT  david --> gibbs
+20120930 15:02 MESSAGE_SENT  vance se parle à lui-même
+20120930 15:02 MESSAGE_SENT  dinozzo --> vance
+20120930 15:02 MESSAGE_SENT  gibbs --> vance
+20120930 15:02 MESSAGE_SENT  mcgee --> dinozzo
+20120930 15:02 MESSAGE_SENT  mcgee --> palmer
+20120930 15:02 MESSAGE_SENT  vance --> gibbs
+20120930 15:02 MESSAGE_SENT  vance --> sciuto
+20120930 15:02 MESSAGE_SENT  palmer --> david
+20120930 15:02 MESSAGE_SENT  david --> sciuto
+20120930 15:02 MESSAGE_SENT  dinozzo --> david
+20120930 15:02 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:02 MESSAGE_SENT  mcgee --> palmer
+20120930 15:02 MESSAGE_SENT  palmer --> vance
+20120930 15:02 MESSAGE_SENT  dinozzo --> mcgee
+20120930 15:02 MESSAGE_SENT  david se parle à lui-mêmeinozzo
+20120930 15:02 MESSAGE_SENT  gibbs --> palmer
+20120930 15:02 MESSAGE_SENT  palmer --> mcgee
+20120930 15:02 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:02 MESSAGE_SENT  mcgee --> vance
+20120930 15:02 MESSAGE_SENT  david --> vance
+20120930 15:02 MESSAGE_SENT  vance --> gibbs
+20120930 15:02 MESSAGE_SENT  mcgee --> david
+20120930 15:02 MESSAGE_SENT  dinozzo --> vance
+20120930 15:03 MESSAGE_SENT  sciuto --> dinozzo
+20120930 15:03 MESSAGE_SENT  palmer --> vance
+20120930 15:03 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:04 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:04 MESSAGE_SENT  vance --> palmer
+20120930 15:04 MESSAGE_SENT  sciuto --> gibbs
+20120930 15:04 MESSAGE_SENT  dinozzo se parle à lui-même
+20120930 15:04 MESSAGE_SENT  gibbs --> vance
+20120930 15:05 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:05 MESSAGE_SENT  david --> palmer
+20120930 15:05 MESSAGE_SENT  david --> palmer
+20120930 15:05 MESSAGE_SENT  david --> gibbs
+20120930 15:05 MESSAGE_SENT  gibbs se parle à lui-mêmeciuto
+20120930 15:05 MESSAGE_SENT  vance --> david
+20120930 15:05 MESSAGE_SENT  david --> mcgee
+20120930 15:06 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:07 MESSAGE_SENT  gibbs --> vance
+20120930 15:07 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:07 MESSAGE_SENT  david --> sciuto
+20120930 15:07 MESSAGE_SENT  dinozzo --> david
+20120930 15:07 MESSAGE_SENT  david --> mcgee
+20120930 15:08 MESSAGE_SENT  palmer --> mcgee
+20120930 15:08 MESSAGE_SENT  mcgee --> vance
+20120930 15:08 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:08 MESSAGE_SENT  mcgee --> vance
+20120930 15:08 MESSAGE_SENT  david --> palmer
+20120930 15:08 MESSAGE_SENT  vance --> dinozzo
+20120930 15:08 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:08 MESSAGE_SENT  gibbs --> vance
+20120930 15:08 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:08 MESSAGE_SENT  mcgee --> david
+20120930 15:09 MESSAGE_SENT  mcgee --> dinozzo
+20120930 15:10 MESSAGE_SENT  palmer --> david
+20120930 15:10 MESSAGE_SENT  gibbs --> vance
+20120930 15:11 MESSAGE_SENT  david --> sciuto
+20120930 15:11 MESSAGE_SENT  vance --> dinozzo
+20120930 15:11 MESSAGE_SENT  palmer --> sciuto
+20120930 15:12 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:12 MESSAGE_SENT  mcgee --> dinozzo
+20120930 15:12 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:12 MESSAGE_SENT  sciuto --> gibbs
+20120930 15:12 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:12 MESSAGE_SENT  gibbs --> dinozzo
+20120930 15:12 MESSAGE_SENT  dinozzo --> david
+20120930 15:12 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:12 MESSAGE_SENT  palmer se parle à lui-même
+20120930 15:12 MESSAGE_SENT  gibbs --> david
+20120930 15:12 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:13 MESSAGE_SENT  sciuto --> palmer
+20120930 15:13 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:13 MESSAGE_SENT  david --> vance
+20120930 15:14 MESSAGE_SENT  dinozzo se parle à lui-même
+20120930 15:14 MESSAGE_SENT  vance --> sciuto
+20120930 15:14 MESSAGE_SENT  david --> mcgee
+20120930 15:14 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:14 MESSAGE_SENT  mcgee --> david
+20120930 15:14 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:14 MESSAGE_SENT  david se parle à lui-même
+20120930 15:14 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:14 MESSAGE_SENT  david --> palmer
+20120930 15:14 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:14 MESSAGE_SENT  gibbs se parle à lui-mêmeciuto
+20120930 15:14 MESSAGE_SENT  palmer --> david
+20120930 15:14 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:14 MESSAGE_SENT  palmer --> gibbs
+20120930 15:14 MESSAGE_SENT  vance --> david
+20120930 15:14 MESSAGE_SENT  vance --> sciuto
+20120930 15:15 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:15 MESSAGE_SENT  david --> palmer
+20120930 15:15 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:15 MESSAGE_SENT  gibbs --> palmer
+20120930 15:15 MESSAGE_SENT  gibbs --> david
+20120930 15:15 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:16 MESSAGE_SENT  vance --> david
+20120930 15:16 MESSAGE_SENT  mcgee --> palmer
+20120930 15:16 MESSAGE_SENT  dinozzo --> mcgee
+20120930 15:16 MESSAGE_SENT  vance --> gibbs
+20120930 15:16 MESSAGE_SENT  david --> sciuto
+20120930 15:16 MESSAGE_SENT  palmer --> david
+20120930 15:17 MESSAGE_SENT  david --> gibbs
+20120930 15:17 MESSAGE_SENT  david --> mcgee
+20120930 15:17 MESSAGE_SENT  palmer --> david
+20120930 15:17 MESSAGE_SENT  palmer --> mcgee
+20120930 15:17 MESSAGE_SENT  sciuto --> david
+20120930 15:17 MESSAGE_SENT  vance --> mcgee
+20120930 15:17 MESSAGE_SENT  dinozzo --> david
+20120930 15:18 MESSAGE_SENT  sciuto --> vance
+20120930 15:18 MESSAGE_SENT  sciuto --> dinozzo
+20120930 15:18 MESSAGE_SENT  vance --> david
+20120930 15:18 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:19 MESSAGE_SENT  palmer --> sciuto
+20120930 15:19 MESSAGE_SENT  sciuto --> david
+20120930 15:20 MESSAGE_SENT  vance --> palmer
+20120930 15:20 MESSAGE_SENT  sciuto --> vance
+20120930 15:21 MESSAGE_SENT  vance --> palmer
+20120930 15:21 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:22 MESSAGE_SENT  david se parle à lui-même
+20120930 15:22 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:22 MESSAGE_SENT  david --> sciuto
+20120930 15:22 MESSAGE_SENT  vance --> mcgee
+20120930 15:22 MESSAGE_SENT  gibbs --> david
+20120930 15:22 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:23 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:23 MESSAGE_SENT  gibbs --> vance
+20120930 15:23 MESSAGE_SENT  dinozzo se parle à lui-même
+20120930 15:23 MESSAGE_SENT  david --> mcgee
+20120930 15:23 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:23 MESSAGE_SENT  palmer --> gibbs
+20120930 15:23 MESSAGE_SENT  vance --> dinozzo
+20120930 15:23 MESSAGE_SENT  vance --> dinozzo
+20120930 15:23 MESSAGE_SENT  dinozzo --> vance
+20120930 15:23 MESSAGE_SENT  david --> gibbs
+20120930 15:23 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:23 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:23 MESSAGE_SENT  sciuto --> palmer
+20120930 15:23 MESSAGE_SENT  sciuto --> gibbs
+20120930 15:23 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:23 MESSAGE_SENT  vance se parle à lui-même
+20120930 15:24 MESSAGE_SENT  vance --> sciuto
+20120930 15:24 MESSAGE_SENT  david --> gibbs
+20120930 15:24 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:25 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:25 MESSAGE_SENT  sciuto --> palmer
+20120930 15:25 MESSAGE_SENT  vance se parle à lui-même
+20120930 15:25 MESSAGE_SENT  gibbs se parle à lui-mêmeciuto
+20120930 15:25 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:25 MESSAGE_SENT  vance --> sciuto
+20120930 15:25 MESSAGE_SENT  gibbs --> vance
+20120930 15:25 MESSAGE_SENT  david se parle à lui-mêmeinozzo
+20120930 15:26 MESSAGE_SENT  vance --> dinozzo
+20120930 15:26 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:26 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:26 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:26 MESSAGE_SENT  palmer --> sciuto
+20120930 15:27 MESSAGE_SENT  sciuto --> dinozzo
+20120930 15:27 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:28 MESSAGE_SENT  palmer --> vance
+20120930 15:28 MESSAGE_SENT  palmer --> mcgee
+20120930 15:28 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:28 MESSAGE_SENT  sciuto --> david
+20120930 15:29 MESSAGE_SENT  mcgee --> david
+20120930 15:29 MESSAGE_SENT  vance --> david
+20120930 15:29 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:29 MESSAGE_SENT  david --> gibbs
+20120930 15:29 MESSAGE_SENT  dinozzo se parle à lui-même
+20120930 15:29 MESSAGE_SENT  dinozzo --> david
+20120930 15:30 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:30 MESSAGE_SENT  vance --> palmer
+20120930 15:31 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:31 MESSAGE_SENT  david se parle à lui-même
+20120930 15:32 MESSAGE_SENT  dinozzo --> mcgee
+20120930 15:32 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:32 MESSAGE_SENT  david --> vance
+20120930 15:33 MESSAGE_SENT  gibbs --> dinozzo
+20120930 15:33 MESSAGE_SENT  vance --> gibbs
+20120930 15:33 MESSAGE_SENT  palmer --> sciuto
+20120930 15:33 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:33 MESSAGE_SENT  vance --> david
+20120930 15:33 MESSAGE_SENT  david se parle à lui-même
+20120930 15:33 MESSAGE_SENT  palmer --> david
+20120930 15:33 MESSAGE_SENT  sciuto --> vance
+20120930 15:33 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:33 MESSAGE_SENT  vance --> sciuto
+20120930 15:34 MESSAGE_SENT  palmer --> sciuto
+20120930 15:34 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:34 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:34 MESSAGE_SENT  david se parle à lui-mêmeinozzo
+20120930 15:34 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:34 MESSAGE_SENT  sciuto --> dinozzo
+20120930 15:35 MESSAGE_SENT  sciuto --> dinozzo
+20120930 15:35 MESSAGE_SENT  david --> sciuto
+20120930 15:35 MESSAGE_SENT  palmer --> gibbs
+20120930 15:35 MESSAGE_SENT  palmer --> david
+20120930 15:36 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:37 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:37 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:37 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:37 MESSAGE_SENT  dinozzo --> vance
+20120930 15:37 MESSAGE_SENT  sciuto --> gibbs
+20120930 15:37 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:37 MESSAGE_SENT  david --> mcgee
+20120930 15:37 MESSAGE_SENT  david se parle à lui-même
+20120930 15:37 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:37 MESSAGE_SENT  sciuto --> vance
+20120930 15:37 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:38 MESSAGE_SENT  sciuto --> palmer
+20120930 15:38 MESSAGE_SENT  palmer --> david
+20120930 15:38 MESSAGE_SENT  sciuto --> dinozzo
+20120930 15:38 MESSAGE_SENT  vance --> david
+20120930 15:38 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:38 MESSAGE_SENT  david --> mcgee
+20120930 15:38 MESSAGE_SENT  dinozzo --> david
+20120930 15:38 MESSAGE_SENT  mcgee --> palmer
+20120930 15:38 MESSAGE_SENT  vance --> mcgee
+20120930 15:38 MESSAGE_SENT  mcgee --> vance
+20120930 15:38 MESSAGE_SENT  sciuto --> vance
+20120930 15:38 MESSAGE_SENT  david se parle à lui-mêmeinozzo
+20120930 15:38 MESSAGE_SENT  sciuto --> gibbs
+20120930 15:38 MESSAGE_SENT  vance --> sciuto
+20120930 15:38 MESSAGE_SENT  sciuto --> palmer
+20120930 15:38 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:38 MESSAGE_SENT  palmer se parle à lui-même
+20120930 15:39 MESSAGE_SENT  gibbs se parle à lui-mêmeciuto
+20120930 15:39 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:39 MESSAGE_SENT  david --> gibbs
+20120930 15:40 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:40 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:40 MESSAGE_SENT  gibbs --> palmer
+20120930 15:40 MESSAGE_SENT  dinozzo se parle à lui-même
+20120930 15:41 MESSAGE_SENT  dinozzo --> vance
+20120930 15:41 MESSAGE_SENT  vance --> palmer
+20120930 15:41 MESSAGE_SENT  vance --> mcgee
+20120930 15:41 MESSAGE_SENT  david --> mcgee
+20120930 15:41 MESSAGE_SENT  palmer --> sciuto
+20120930 15:41 MESSAGE_SENT  gibbs --> david
+20120930 15:41 MESSAGE_SENT  david se parle à lui-mêmeinozzo
+20120930 15:42 MESSAGE_SENT  gibbs --> david
+20120930 15:43 MESSAGE_SENT  gibbs se parle à lui-mêmeciuto
+20120930 15:43 MESSAGE_SENT  mcgee --> gibbs
+20120930 15:43 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:43 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:43 MESSAGE_SENT  dinozzo --> mcgee
+20120930 15:43 MESSAGE_SENT  dinozzo --> vance
+20120930 15:43 MESSAGE_SENT  dinozzo se parle à lui-même
+20120930 15:43 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:43 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:43 MESSAGE_SENT  vance se parle à lui-même
+20120930 15:44 MESSAGE_SENT  mcgee --> dinozzo
+20120930 15:44 MESSAGE_SENT  david --> mcgee
+20120930 15:44 MESSAGE_SENT  gibbs --> dinozzo
+20120930 15:44 MESSAGE_SENT  mcgee --> palmer
+20120930 15:44 MESSAGE_SENT  sciuto --> david
+20120930 15:44 MESSAGE_SENT  gibbs --> mcgee
+20120930 15:44 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:45 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:45 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:45 MESSAGE_SENT  gibbs --> david
+20120930 15:45 MESSAGE_SENT  mcgee --> palmer
+20120930 15:45 MESSAGE_SENT  gibbs --> dinozzo
+20120930 15:45 MESSAGE_SENT  palmer --> david
+20120930 15:45 MESSAGE_SENT  gibbs --> dinozzo
+20120930 15:45 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:46 MESSAGE_SENT  dinozzo --> vance
+20120930 15:46 MESSAGE_SENT  sciuto --> david
+20120930 15:46 MESSAGE_SENT  palmer --> vance
+20120930 15:46 MESSAGE_SENT  david --> mcgee
+20120930 15:46 MESSAGE_SENT  dinozzo --> sciuto
+20120930 15:46 MESSAGE_SENT  palmer --> gibbs
+20120930 15:46 MESSAGE_SENT  mcgee --> dinozzo
+20120930 15:46 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:46 MESSAGE_SENT  palmer --> vance
+20120930 15:46 MESSAGE_SENT  mcgee --> sciuto
+20120930 15:46 MESSAGE_SENT  dinozzo --> palmer
+20120930 15:46 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:46 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:46 MESSAGE_SENT  sciuto --> palmer
+20120930 15:46 MESSAGE_SENT  palmer se parle à lui-même
+20120930 15:47 MESSAGE_SENT  david --> mcgee
+20120930 15:47 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:47 MESSAGE_SENT  vance --> gibbs
+20120930 15:47 MESSAGE_SENT  mcgee --> vance
+20120930 15:47 MESSAGE_SENT  dinozzo --> david
+20120930 15:47 MESSAGE_SENT  david se parle à lui-même
+20120930 15:48 MESSAGE_SENT  vance --> gibbs
+20120930 15:49 MESSAGE_SENT  sciuto --> gibbs
+20120930 15:50 MESSAGE_SENT  vance --> palmer
+20120930 15:50 MESSAGE_SENT  gibbs se parle à lui-même
+20120930 15:51 MESSAGE_SENT  vance --> mcgee
+20120930 15:51 MESSAGE_SENT  david --> sciuto
+20120930 15:51 MESSAGE_SENT  mcgee --> vance
+20120930 15:51 MESSAGE_SENT  palmer --> sciuto
+20120930 15:51 MESSAGE_SENT  dinozzo --> vance
+20120930 15:51 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:51 MESSAGE_SENT  david --> palmer
+20120930 15:51 MESSAGE_SENT  vance --> mcgee
+20120930 15:51 MESSAGE_SENT  mcgee --> david
+20120930 15:51 MESSAGE_SENT  dinozzo --> mcgee
+20120930 15:51 MESSAGE_SENT  gibbs --> palmer
+20120930 15:51 MESSAGE_SENT  palmer se parle à lui-même
+20120930 15:52 MESSAGE_SENT  vance --> gibbs
+20120930 15:52 MESSAGE_SENT  palmer --> dinozzo
+20120930 15:53 MESSAGE_SENT  dinozzo --> vance
+20120930 15:53 MESSAGE_SENT  sciuto --> vance
+20120930 15:53 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:53 MESSAGE_SENT  gibbs --> vance
+20120930 15:53 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:53 MESSAGE_SENT  dinozzo --> mcgee
+20120930 15:53 MESSAGE_SENT  david --> gibbs
+20120930 15:54 MESSAGE_SENT  david --> vance
+20120930 15:55 MESSAGE_SENT  gibbs --> vance
+20120930 15:55 MESSAGE_SENT  vance --> david
+20120930 15:55 MESSAGE_SENT  sciuto se parle à lui-même
+20120930 15:56 MESSAGE_SENT  david se parle à lui-même
+20120930 15:56 MESSAGE_SENT  mcgee se parle à lui-même
+20120930 15:56 MESSAGE_SENT  sciuto --> mcgee
+20120930 15:56 MESSAGE_SENT  palmer se parle à lui-même
+20120930 15:56 MESSAGE_SENT  dinozzo --> gibbs
+20120930 15:56 MESSAGE_SENT  gibbs --> david
+20120930 15:57 LOGOUT        bye-bye gibbs
+20120930 15:57 LOGOUT        bye-bye palmer
+20120930 15:57 LOGOUT        bye-bye sciuto
+20120930 15:57 LOGOUT        bye-bye vance
+20120930 15:57 LOGOUT        bye-bye dinozzo
+20120930 15:57 LOGOUT        bye-bye david
+20120930 15:57 LOGOUT        bye-bye mcgee
