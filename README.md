@@ -15,6 +15,7 @@ Compte-rendus, corrections et réponses aux exercices de TP.
 + [CS357](/C) - C
 + [CS318](/Java) - Java
 + [OS308](/OS) - Systèmes d'exploitation
++ [MA367](/TDS) - Traitement de signal
 + [CE311](/VHDL) - VHDL
 
 ## Auteurs
