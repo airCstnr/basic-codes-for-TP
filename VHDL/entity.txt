@@ -1,6 +1,0 @@
-
--- entité en VHDL
-
-entity nom_entité is
-
-end entity;
