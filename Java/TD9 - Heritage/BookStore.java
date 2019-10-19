@@ -3,19 +3,34 @@ import java.util.Iterator;
 
 public class BookStore {
 
-	private ArrayList<Book> books;
+	private ArrayList<Item> items;
 	
 	/**
 	 * Crée un nouveau book store
 	 */
 	public BookStore() {
-		books = new ArrayList<>();
+		items = new ArrayList<>();
 	}
 	
-//	void addCD(String tag, String titre, String dateAchat, double prixAchat, Status etat, qmlskfqsmdfkljqmsf)
-//	{
-//		
-//	}
+	/**
+	 * Ajoute un nouveau CD au BookStore
+	 * @param tag
+	 * @param titre
+	 * @param dateAchat
+	 * @param prixAchat
+	 * @param etat
+	 * @param chanteur
+	 * @param compositeur
+	 * @param nbChansons
+	 */
+	void addCD(String tag, String titre, String dateAchat, double prixAchat, Status etat, String chanteur,
+			String compositeur, int nbChansons)
+	{
+		if(!exists(tag)) {
+			items.add(new CD(tag, titre, dateAchat, prixAchat, etat, chanteur,
+			compositeur, nbChansons));
+		}
+	}
 	
 	/**
 	 * Ajoute un livre à la liste
@@ -28,7 +43,7 @@ public class BookStore {
 	public void addBook(String tag, String auteur, String titre, String dateAchat, double prixAchat) {
 		if(this.getBook(tag)==null)
 		{
-			books.add(new Book(tag, auteur, titre, dateAchat, prixAchat));
+			items.add(new Book(tag, auteur, titre, dateAchat, prixAchat));
 		}
 	}
 	
@@ -36,8 +51,33 @@ public class BookStore {
 	 * Ajoute un livre à la liste
 	 * @param b
 	 */
+	public void addCD(CD c) {
+		items.add(c);
+	}
+	
+	/**
+	 * Ajoute un livre à la liste
+	 * @param b
+	 */
 	public void addBook(Book b) {
-		books.add(b);
+		items.add(b);
+	}
+	
+	public Item getItem(String tag) {
+		for (Item item : items) {
+			if(item.getTag().equals(tag)) {
+				return item;
+			}
+		}
+		return null;
+	}
+	
+	/**
+	 * Supprimer un item à partir de son numéro RFID
+	 * @param tag
+	 */
+	public void removeItem(String tag) {
+		if(exists(tag)) {items.remove(this.getItem(tag)); }
 	}
 	
 	/**
@@ -45,7 +85,7 @@ public class BookStore {
 	 * @param tag
 	 */
 	public void removeBook(String tag) {
-		if(exists(tag)) {books.remove(this.getBook(tag)); }
+		if(exists(tag)) {items.remove(this.getBook(tag)); }
 	}
 	
 	/**
@@ -53,15 +93,15 @@ public class BookStore {
 	 */
 	public void displayAllBook() {
 		System.out.println("Books list :");
-		for (Book book : books) {
-			book.printInfo();
+		for (Item item : items) {
+			item.toString();
 		}
-		System.out.println("Books count : " + books.size());
+		System.out.println("Books count : " + items.size());
 	}
 	
 	private boolean exists(String tag) {
-		for (Book book : books) {
-			if(book.getTag().equalsIgnoreCase(tag)) {
+		for (Item item : items) {
+			if(item.getTag().equalsIgnoreCase(tag)) {
 				return true;
 			}
 		}
@@ -75,9 +115,9 @@ public class BookStore {
 	public Book getBook(String tag) {
 		if(exists(tag))
 		{
-			for (Book book : books) {
-				if(book.getTag().equalsIgnoreCase(tag)) {
-					return book;
+			for (Item item : items) {
+				if(item.getTag().equalsIgnoreCase(tag)) {
+					return item;
 				}
 			}
 		}
@@ -91,9 +131,9 @@ public class BookStore {
 	 */
 	public ArrayList<Book> findBookByAuthor(String auteur) {
 		ArrayList<Book> list = new ArrayList<>();
-		for (Book book : books) {
-			if(book.getAuteur().equalsIgnoreCase(auteur)) {
-				list.add(book);
+		for (Item item : items) {
+			if(item.getAuteur().equalsIgnoreCase(auteur)) {
+				list.add(item);
 			}
 		}
 		return list;
@@ -106,9 +146,9 @@ public class BookStore {
 	 */
 	public ArrayList<Book> findBookByTitle(String titre) {
 		ArrayList<Book> list = new ArrayList<>();
-		for (Book book : books) {
-			if(book.getTitre().equalsIgnoreCase(titre)) {
-				list.add(book);
+		for (Item item : items) {
+			if(item.getTitre().equalsIgnoreCase(titre)) {
+				list.add(item);
 			}
 		}
 		return list;
